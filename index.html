@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+<title>Mike Liddle</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mike Liddle is a software developer.  This site showcases the projects he's worked on, has links to download his resume, and briefly shows his work and educational experience">
+
+<link rel="stylesheet" href="style/style_main.css">
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+<script src="js/mainApp.js"></script>
+<script src="js/mainController.js"></script>
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body ng-controller="mainController as vm" ng-cloak class="w3-light-grey" id="topOfPage">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <ul class="w3-navbar w3-deep-orange w3-wide w3-padding-8 w3-card-2">
+        <li>
+            <a href="#topOfPage" class="w3-margin-left"><b>Mike Liddle</b></a>
+        </li>
+        <!-- Float links to the right. Hide them on small screens -->
+        <li class="w3-right w3-hide-small">
+            <a href="#Projects" class="w3-left w3-margin-right">Projects</a>
+            <a href="#workExperience" class="w3-left">Work Experience</a>
+            <a href="#Education" class="w3-left">Education</a>
+            <a href="mailto:contact@mikeliddle.com" class="w3-left w3-margin-right">Contact Me</a>
+        </li>
+    </ul>
+</div>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;"  id="Projects">
+    <br />
+    <br />
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+
+            <div class="w3-white w3-text-grey w3-card-4">
+                <div class="w3-display-container" style="text-align: center; background-color: black;">
+                    <img src="assets/home/profilePic.jpg" style="width:50%" alt="Profile Picture">
+                    <div class="w3-display-bottomleft w3-container w3-text-white">
+                        <h2>Mike Liddle</h2>
+                    </div>
+                </div>
+                <div class="w3-container">
+                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Software Developer</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Provo, Utah, USA</p>
+                    <p><a href="mailto:mike@mikeliddle.com"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Mike@mikeliddle.com</a></p>
+                    <p><a href="assets/resume.pdf" target="_blank"><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Download Resume</a></p>
+                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>See Resume for Phone Number</p>
+                    <hr>
+                    <!------------------------------------------------ LANGUAGES ------------------------------------------------>
+                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-deep-orange"></i>Skills</b></p>
+                    <p>C#</p>
+                    <div class="w3-progress-container w3-round-xlarge w3-small">
+                        <div class="w3-progressbar w3-round-xlarge w3-deep-orange" style="width:70%">
+                            <div class="w3-center w3-text-white"></div>
+                        </div>
+                    </div>
+                    <p>Java</p>
+                    <div class="w3-progress-container w3-round-xlarge w3-small">
+                        <div class="w3-progressbar w3-round-xlarge w3-deep-orange" style="width:90%">
+                            <div class="w3-center w3-text-white"></div>
+                        </div>
+                    </div>
+                    <p>Python</p>
+                    <div class="w3-progress-container w3-round-xlarge w3-small">
+                        <div class="w3-progressbar w3-round-xlarge w3-deep-orange" style="width:70%">
+                            <div class="w3-center w3-text-white"></div>
+                        </div>
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="w3-progress-container w3-round-xlarge w3-small">
+                        <div class="w3-progressbar w3-round-xlarge w3-deep-orange" style="width:90%">
+                            <div class="w3-center w3-text-white"></div>
+                        </div>
+                    </div>
+                    <p>PHP</p>
+                    <div class="w3-progress-container w3-round-xlarge w3-small">
+                        <div class="w3-progressbar w3-round-xlarge w3-deep-orange" style="width:80%">
+                            <div class="w3-center w3-text-white"></div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-deep-orange"></i>Languages</b></p>
+                    <p>English</p>
+                    <div class="w3-progress-container w3-round-xlarge">
+                        <div class="w3-progressbar w3-round-xlarge w3-deep-orange" style="width:100%"></div>
+                    </div>
+                    <p>Swedish</p>
+                    <div class="w3-progress-container w3-round-xlarge">
+                        <div class="w3-progressbar w3-round-xlarge w3-deep-orange" style="width:90%"></div>
+                    </div>
+                    <br>
+                    <hr/>
+                    <p class="w3-large w3-text-theme"><b><i class="fa fa-star fa-fw w3-margin-right w3-text-deep-orange"></i>Achievements</b></p>
+                    <ul>
+                        <li>Placed 3rd and 2nd in the Wasatch Back Ragnar Relay</li>
+                        <li>Sterling Scholar in Computer Science (Utah 2014)</li>
+                        <li>Eagle Scout with 2 palms</li>
+                        <li>4 time state champion in TSA Systems control challenge</li>
+                    </ul>
+                </div>
+            </div><br>
+
+            <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+            <!---------------------------- PROJECTS ------------------------------>
+            <div class="w3-container w3-card-2 w3-white w3-margin-bottom w3-padding-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Projects</h2>
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-col m4">
+                        <div class="w3-card-4 w3-margin-right w3-margin-bottom" ng-mouseenter="vm.rest_show = true;" ng-mouseleave="vm.rest_show = false;">
+                            <a href="http://restoration.mikeliddle.com" target="_blank">
+                                <header class="w3-container w3-deep-orange">
+                                    <h5 class="no-underline"><b>Project Restoration</b></h5>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="assets/home/card_firstVision.jpg" alt="Project Restoration" style="width:100%" class="w3-hover-opacity">
+                                </div>
+                            </a>
+                            <footer class="w3-container w3-deep-orange angular-reveal">
+                                <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2016</h6>
+                                <p ng-show="vm.rest_show">Single page web project for my religion class.  Used Angular JS, w3-css and html.</p>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="w3-col m4">
+                        <div class="w3-card-4 w3-margin-right w3-margin-bottom" ng-mouseenter="vm.ttd_show = true;" ng-mouseleave="vm.ttd_show = false;">
+                            <a href="http://TrashTalkDev.mikeliddle.com" target="_blank">
+                                <header class="w3-container w3-deep-orange">
+                                    <h5>TrashTalk Customer Portal</h5>
+                                </header>
+                                <div class="w3-container card_holder w3-hover-opacity">
+                                    <img src="assets/home/card_trashTalk.jpg" alt="TrashTalk Customer Portal" style="width:100%" class="card-bg-image">
+                                </div>
+                            </a>
+
+                            <footer class="w3-container w3-deep-orange angular-reveal">
+                                <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 (Not Maintained)</h6>
+                                <p ng-show="vm.ttd_show">Angular JS web application backed by a Node JS server built for TrashTalk LLC.  None of the displayed data represents any actual data.</p>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="w3-col m4">
+                        <div class="w3-card-4 w3-margin-right w3-margin-bottom" ng-mouseenter="vm.ql_show = true;" ng-mouseleave="vm.ql_show = false;">
+                            <a href="http://quicklaugh.mikeliddle.com" target="_blank">
+                                <header class="w3-container w3-deep-orange">
+                                    <h5>Quicklaugh</h5>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="assets/home/card_quicklaugh.jpg" alt="Quicklaugh" style="width:100%" class="w3-hover-opacity">
+                                </div>
+                            </a>
+
+                            <footer class="w3-container w3-deep-orange angular-reveal">
+                                <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 (Not Maintained)</h6>
+                                <p ng-show="vm.ql_show">PHP based web game which allows users to submit and answer questions in an attempt to have the funniest answer out of them and their friends.  Still in progress.</p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects here ^^ -->
+            </div>
+
+            <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="workExperience">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Work Experience</h2>
+
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Teacher Assistant / BYU</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - <span class="w3-tag w3-deep-orange w3-round">Current</span></h6>
+                    <p>CS 312 - Algorithm Design and Testing
+                    <p>CS 312 A study of the design and analysis of algorithms as solutions to problems, including dynamic programming, linear programming, greedy algorithms, divide-and-conquer algorithms, graph algorithms, and intelligent search algorithms.</p>
+                    <p>Answer homework questions, grade homework, and lab projects.</p>
+                    <p>We switched the curriculum from being taught with C# to Python this year and the TA's have been going through and recoding their solutions to verify that the new GUI code works.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Research Programmer / BYU</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2017 - <span class="w3-tag w3-deep-orange w3-round">Current</span></h6>
+                    <p>BYU Computer Science</p>
+                    <p>Dr. Roper hired me to continue work on a peer review and auto-grading tool for CS 235.  This project enables a student to perform an online submission and almost instantaneously receive a score for their completeness and style of their c++ code, then assign their code to be reviewed by another student.</p>
+                    <p>The web-facing portions of the project are built in PHP and JavaScript with the actual parsing, grading, and compilation utilities were built originally with BASH, but were switched to run in Python.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Full Stack Developer / TrashTalk LLC</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Dec 2017</h6>
+                    <p>I was brought on to design and create the administrative client portal for this startup company.  The front-end was completed using AngularJS, and Bootstrap, the backend using Node JS.  This is all still currently under development, but will allow for customers to see any and all details they might want to see about their IOT devices.  In addition I consult in optimization for the IOT sensors' code and all other software/technology needs.</p>
+                    <p>Later, I consulted them with their software needs, and debugged a google apps script project that does some automated reporting for data analysis.</p>
+                    <hr>
+                </div>
+                <!-----------------------------------------------------CUT OFF FOR AUTO VISIBILITY------------------------------------------------>
+                <div class="w3-margin-bottom">
+                    <span class="hover_pointer" ng-click="vm.actionClick(vm.resume)"><i ng-class="vm.resume.button"></i><b>{{vm.resume.text}}</b></span>
+                </div>
+                <div ng-hide="vm.resume.value" class="w3-container">
+                    <h5 class="w3-opacity"><b>Teacher Assistant / BYU</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2017 - Dec 2017</h6>
+                    <p>CS 224 - Intro to computer systems
+                    <p>CS 224 is an introductory course to computer systems. The purpose is to understand the levels of abstraction from gates through high level languages in the organization of a modern computer.</p>
+                    <p>Answer homework questions, grade homework, and lab projects.</p>
+                    <p>The professor for this class assigned me to a special project creating an automated grading script for the labs for this and other classes which can compile code, run it against pre-defined and random test cases and determine a score for the students based of completion, style, and policy (late days, early days, etc.).  This developed into a project that combined with a peer review system where students will grade each others' code and that score as well as the automated score will be reported to the TA's and instructors.
+                    <hr>
+                </div>
+                <div ng-hide="vm.resume.value" class="w3-container">
+                    <h5 class="w3-opacity"><b>Computer Programmer / BYU</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2017 - Sept 2017</h6>
+                    <p>BYU Statistics</p>
+                    <p>Work responsibilities include creating and maintaining help queue software, managing Drupal sites, managing lab computers, managing servers and other network devices, and day to day troubleshooting in the office.</p>
+                    <p>I was also assigned to a special project with a professor creating some adaptive online tests for students to use as practice.  These are being made using the Concerto Platform which was made in PHP and uses a MySQL database, and R engine to create adaptive tests.</p>
+                    <hr>
+                </div>
+                <div ng-hide="vm.resume.value" class="w3-container">
+                    <h5 class="w3-opacity"><b>Software Developer / Solden Services</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2016 - Jan 2017</h6>
+                    <p>Worked on a development team to produce web apps using Angular JS and hosted on SharePoint. Automated server tasks using Bash, C#, and a SQL Server. Used Scrum methodology.</p>
+                    <hr>
+                </div>
+                <div ng-hide="vm.resume.value" class="w3-container">
+                    <h5 class="w3-opacity"><b>IT Technician / Connor Group</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2013 - Aug 2014</h6>
+                    <p>The company flushed its IT department and hired me to help build it up again.  I was in charge of Re-imaging windows laptops, configuring printers, network devices, software preferences, and providing basic support.  I supported both hardware and software components of the infrastructure.</p>
+                    <hr>
+                </div>
+                <div ng-hide="vm.resume.value" class="w3-container">
+                    <h5 class="w3-opacity"><b>Broadband Technician / ServerPlus</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2013 - Aug 2013</h6>
+                    <p>I was hired as a Tier 1 broadband support technician.  We serviced ISPs in Australia, Canada, USA, providing support for Internet connectivity, email, and VOIP issues.  Occasionally handled billing issues as well. We followed decision trees to troubleshoot the issues and made tickets to track the issues.  Requirement to be hired was to pass a network certification exam which I scored perfectly on as the youngest technician they had hired.</p>
+                    <hr>
+                </div>
+                <div ng-hide="vm.resume.value" class="w3-container">
+                    <h5 class="w3-opacity"><b>Sandwich Artist / Subway</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2012 - Mar 2012 </h6>
+                    <p>I worked as a sandwich artist at Subway where my primary roles were interacting with customers to take their order and make their sandwiches, then preparing food for the next day and cleaning the restaurant.</p>
+                    <br />
+                </div>
+            </div>
+
+            <!----------------------------------------------------- EDUCATION ------------------------------------------------>
+            <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="Education">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Education</h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Brigham Young University</b></h5>
+                    <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - <span class="w3-tag w3-deep-orange w3-round">Current</span></h6>
+                    <p>Pursuing a Bachelor's degree in Computer Science with a minor in Scandinavian Studies</p>
+                    <p>Junior (Expected Graduation: April 2019)</p>
+                    <p>GPA: 3.75</p>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-deep-orange w3-center w3-margin-top">
+    <p>Find me on social media</p>
+    <div class="w3-margin-bottom">
+        <a href="https://www.facebook.com/michael.liddle.7" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i></a>
+        <a href="https://www.instagram.com/liddlemichael/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-text-brown w3-large"></i></a>
+        <a href="https://www.linkedin.com/in/michael-liddle-55b62796" target="_blank"><i class="fa fa-linkedin w3-hover-text-blue w3-large"></i></a>
+        <a href="https://github.com/mikeliddle" target="_blank"><i class="fa fa-github w3-hover-text-black w3-large"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
