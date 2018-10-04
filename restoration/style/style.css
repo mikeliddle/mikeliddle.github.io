@@ -1,0 +1,74 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.grey-box {
+    background: rgba(150, 150, 150, 0.8);
+}
+
+.kid {
+    font-size: large;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+    opacity: 0.7;
+    background: no-repeat fixed center;
+    background-size: cover;
+}
+
+.expandableButton:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.expandableContainer {
+    padding-left: 100px; padding-right: 100px;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("../assets/SLCTemple.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../assets/firstVision2.jpg");
+    min-height: 100%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("../assets/moroni.jpg");
+    min-height: 100%;
+}
+
+.bgimg-4 {
+    background-image: url("../assets/Translation.jpg");
+    min-height: 100%;
+}
+
+.bgimg-5 {
+    background-image: url("../assets/priesthood.jpg");
+    min-height: 100%;
+}
+
+.bgimg-6 {
+    background-image: url("../assets/sacrament.jpg");
+    min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+        background-attachment: scroll;
+    }
+}
