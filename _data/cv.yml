@@ -66,6 +66,7 @@ mliddle:
           title:            "Memo"
           technologies:     "AWS Lambda, Node.JS, AWS Dynamo DB, Alexa"
           responsibilities:
+            - "<a href='https://mikeliddle.com/Memo'>Found Here!</a>"
             - "An Alexa skill for leaving messages for other individuals in a household"
             - "Built for an Alexa skill competition"
         - time:             "November 2016"
