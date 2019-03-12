@@ -13,7 +13,7 @@
         .page-description,
         .nav a {
             color: $color-white;
-            text-shadow: 1px 1px 5px rgba($color-black, 0.5);
+            text-shadow: 1px 1px 5px rgba($color-black, .5);
         }
 
         .nav {
@@ -64,7 +64,7 @@
             word-spacing: 15px;
             line-height: 1.2;
             text-decoration: none;
-            text-shadow: 1px 1px 5px rgba($color-black, 0.3);
+            text-shadow: 1px 1px 5px rgba($color-black, .3);
         }
     }
 
@@ -73,7 +73,7 @@
         font-weight: normal;
         font-style: italic;
         font-family: 'Merriweather', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
-        color: rgba($color-text-header, 0.8);
+        color: rgba($color-text-header, .8);
     }
 }
 
@@ -201,11 +201,11 @@
     transform: translateX(400px);
     border: none;
     display: none;
-    opacity: 0.8;
-    transition: all 0.3s;
+    opacity: .8;
+    transition: all .3s;
 
     &.less-opacity {
-        opacity: 0.2;
+        opacity: .2;
     }
 
     &:hover {
