@@ -2,19 +2,8 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136111557-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-136111557-1');
-</script>
-
 <html lang="{% if page.language %}{{ page.language | downcase }}{% else %}{{ site.language | downcase }}{% endif %}">
 {% include head.html %}
-
 <body class="home-template">
     <div class="site-wrapper">
         {% include header.html %}

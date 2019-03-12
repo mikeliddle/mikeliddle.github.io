@@ -3,7 +3,7 @@ default:                                                      # Fallback if noth
   name:         "Mike Liddle"                                 # used to display author name
   cover:        /assets/mountain-alternative-cover.jpg        # OPTIONAL: defines location of cover image in about page
   picture:      /assets/mliddle.jpg                           # OPTIONAL: author picture
-  bio:          Married Student and soon Microsoft Employee   # OPTIONAL: text below author name in posts
+  bio:          Married Student and Software Engineer         # OPTIONAL: text below author name in posts
   location:     Utah                                          # OPTIONAL: used to display location of the author
   website:      mikeliddle.com       						              # OPTIONAL: link to the author of a post
   email:                                                      # OPTIONAL: used in the about page
@@ -28,9 +28,9 @@ mliddle:
   name:         "Mike Liddle"       
   cover:        /assets/mountain-alternative-cover.jpg  
   picture:      /assets/mliddle.jpg  
-  bio:          Married Student and soon Microsoft Employee
+  bio:          Married Student and Software Engineer
   location:     Utah
   email:        "mike@mikeliddle.com"   
-  github:       "mikeliddle"    
+  github:       mikeliddle
   linkedin:     michael-liddle-55b62796                       # OPTIONAL: used in the about page
   facebook:     michael.liddle7                               # OPTIONAL: used in the about page
