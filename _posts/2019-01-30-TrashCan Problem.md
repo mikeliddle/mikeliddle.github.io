@@ -2,7 +2,7 @@
 layout:            post
 title:             "The Trashcan Problem"
 menutitle:         "The Trashcan Problem - Finding an Algorithm"
-include:           math
+math:              true
 category:          Technology
 author:            mliddle
 tags:              Applying Algorithms
@@ -75,7 +75,7 @@ produced as a data-point, with one point for each unit, and the x and y
 coordinates are simply location, we can create some good clusters to see
 areas where we are not currently collecting on a map, and given a high
 density of data points(every trashcan's data is in the same spot), if we
-force our algorithm to add a cluster (`k = k + 1`) then one of the
+force our algorithm to add a cluster ($$k = k + 1$$) then one of the
 clusters should divide, right? We will revisit clustering.
 
 ## Bubble Charts
@@ -140,7 +140,7 @@ Our algorithm will be as follows:
 7. Rerun 3-6 for each trashcan exceeding the threshold.
 
 Analyzing this algorithm we just created, our most complex part is K-means
-which has a complexity of `O(k*N*T)` where T is the number of iteration, k is the number of clusters, and N is the number of samples. This will be repeated for every trashcan, so in worst case, our algorithm will likely be `O(k^2*N*T)`. Not bad for a set-cover type problem.
+which has a complexity of $$O(k*N*T)$$ where T is the number of iteration, k is the number of clusters, and N is the number of samples. This will be repeated for every trashcan, so in worst case, our algorithm will likely be $$O(k^2*N*T)$$ Not bad for a set-cover type problem.
 
 This solution ignores infrastructure concerns, such as, "that's a building,
 I can't put a trashcan there" but gives a good solution if we are looking

@@ -56,7 +56,7 @@ mliddle:
         - time:             "August 2018 - April 2019"
           team:             "Team of 4"
           title:            "Nobis Sales Agent"
-          technologies:     "Python, CMU Sphinx, SpaCy, SalIE, Rasa NLU, Docker, Decision Trees"
+          technologies:     "Python3, Speech Recognition, SpaCy, SalIE, Rasa NLU"
           responsibilities:
             - "Automated sales agent for low-end sales"
             - "The agent would determine how the customer responds and react to best sell to them"
