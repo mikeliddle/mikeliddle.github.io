@@ -3,7 +3,7 @@ layout:            post
 title:             "Designing a Web API"
 menutitle:         "Designing a Web API - TrashTalk"
 category:          Technology
-author:            mliddle
+author:            ML
 tags:              Web APIs
 ---
 
@@ -63,7 +63,7 @@ are easy to handle by having multiple databases and a serverless
 architecture. Localities can be directed to different regions on AWS and
 multiple services can cooperate easily without knowing about each other.
 Availability is achieved by moving serverless and having multiple
-databases and auto-scaling those. These are easy solved problems.
+databases and auto-scaling those. These are known problems.
 
 ### A note on SQL vs NOSQL
 

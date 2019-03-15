@@ -1,9 +1,9 @@
 default:                                                      # Fallback if nothing is specified
-  initial:      ML                                            # used for author lookup in posts and for first two characters in the about page back button
+  initial:       ML                                           # used for author lookup in posts and for first two characters in the about page back button
   name:         "Mike Liddle"                                 # used to display author name
   cover:        /assets/mountain-alternative-cover.jpg        # OPTIONAL: defines location of cover image in about page
   picture:      /assets/mliddle.jpg                           # OPTIONAL: author picture
-  bio:          Married Student and Software Engineer         # OPTIONAL: text below author name in posts
+  bio:          Married Student and Software Engineer in Provo, Utah # OPTIONAL: text below author name in posts
   location:     Utah                                          # OPTIONAL: used to display location of the author
   website:      mikeliddle.com       						              # OPTIONAL: link to the author of a post
   email:                                                      # OPTIONAL: used in the about page
@@ -23,12 +23,12 @@ default:                                                      # Fallback if noth
   twitch:                                                     # OPTIONAL: used in the about page
   s500px:                                                     # OPTIONAL: used in the about page
   reddit:    
-mliddle:
+ML:
   initial:      ML                                            # OPTIONAL: used in the about page
   name:         "Mike Liddle"       
   cover:        /assets/mountain-alternative-cover.jpg  
   picture:      /assets/mliddle.jpg  
-  bio:          Married Student and Software Engineer
+  bio:          Married Student and Software Engineer in Provo, Utah
   location:     Utah
   email:        "mike@mikeliddle.com"   
   github:       mikeliddle

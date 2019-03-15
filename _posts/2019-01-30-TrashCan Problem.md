@@ -4,7 +4,7 @@ title:             "The Trashcan Problem"
 menutitle:         "The Trashcan Problem - Finding an Algorithm"
 math:              true
 category:          Technology
-author:            mliddle
+author:            ML
 tags:              Applying Algorithms
 ---
 

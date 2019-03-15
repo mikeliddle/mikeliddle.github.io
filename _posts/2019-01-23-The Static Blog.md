@@ -3,7 +3,7 @@ layout:            post
 title:             "The Static Blog"
 menutitle:         "The Static Blog"
 category:          Technology
-author:            mliddle
+author:            ML
 tags:              Static Blogging
 ---
 

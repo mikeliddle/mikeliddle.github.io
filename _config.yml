@@ -6,14 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:            Mike Liddle Software Engineer
+title:            Mike Liddle Software Engineer and Student
+title_logo:       Mike Liddle
 subtitle:         Projects, Tutorials, Experiences, Software, and more
 description:      Mike Liddle's blog about his experiences with different projects and technologies. Software is growing and we must learn to keep up. Software developers are seeking to stay on top of their market by learning and practicing new technologies.
-keywords:         Mike Liddle Software Microsoft IoT Microservice Programming Project Management Developer Engineer
-language:         "en" # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
+keywords:         Mike Liddle, Software, Microsoft, IoT, Microservice, Programming, Project, Management, Developer, Engineer, Utah
+language:         "en"
 
-baseurl:          "/" # the subpath of your site, e.g. /blog
-url:              "https://mikeliddle.com" # the base hostname & protocol for your site. Have a look at robots.txt as well!
+baseurl:          ""
+url:              "https://mikeliddle.com"
 permalink:        /blog/:categories/:title
 cover:            /assets/mountain-alternative-cover.jpg
 disqus_shortname: "jekylldecent"
