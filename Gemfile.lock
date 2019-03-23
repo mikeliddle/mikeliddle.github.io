@@ -83,6 +83,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -95,6 +96,7 @@ DEPENDENCIES
   jekyll-mentions
   jekyll-redirect-from
   jekyll-sitemap
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.0.1
