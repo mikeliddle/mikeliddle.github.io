@@ -14,7 +14,7 @@ mliddle:
                              minor in Scandinavian Studies
                              GPA: 3.78"
     employment:
-      - time:               "July 2019 - Current"
+        - time:             "July 2019 - Current"
           location:         "Lehi, UT"
           company:          "Microsoft: Intune"
           position:         "Software Engineer"
@@ -22,7 +22,7 @@ mliddle:
             - "Research and implement SCEP, OpenConnect, OpenVPN, and other security protocols"
             - "Research, design, and present architecture and implementation solutions"
             - "Built and maintained Microservices"  
-      - time:             "May 2018 - Aug 2018"
+        - time:             "May 2018 - Aug 2018"
           location:         "Redmond, WA"
           company:          "Microsoft: Intune"
           position:         "Software Engineering Intern"
