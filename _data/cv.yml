@@ -14,7 +14,15 @@ mliddle:
                              minor in Scandinavian Studies
                              GPA: 3.78"
     employment:
-        - time:             "May 2018 - Aug 2018"
+      - time:               "July 2019 - Current"
+          location:         "Lehi, UT"
+          company:          "Microsoft: Intune"
+          position:         "Software Engineer"
+          responsibilities:
+            - "Research and implement SCEP, OpenConnect, OpenVPN, and other security protocols"
+            - "Research, design, and present architecture and implementation solutions"
+            - "Built and maintained Microservices"  
+      - time:             "May 2018 - Aug 2018"
           location:         "Redmond, WA"
           company:          "Microsoft: Intune"
           position:         "Software Engineering Intern"
@@ -30,7 +38,7 @@ mliddle:
             - "Coding and Debugging IoT firmware"
             - "Designing and building a REST API for the company's data"
             - "Server and Database management through AWS"
-        - time:             "Feb 2017 - Current"
+        - time:             "Feb 2017 - May 2019"
           location:         "Provo, UT"
           company:          "Brigham Young University"
           position:         "Teaching Assistant"
@@ -53,6 +61,15 @@ mliddle:
             - "Built a server resource monitor to help the department load-balance servers"
             - "Built an adaptive testing service for actuarial students"
     projects:
+        - time:             "November 2019 - December 2019"
+          team:             "Solo"
+          title:            "Space Christmas"
+          technologies:     "Azure DevOps, Github, C#, Razor, .NET Core 3, js"
+          responsibilities:
+            - "<a href='https://github.com/mikeliddle/spacechristmas'>Repo on Github</a>"
+            - "Web application for my family christmas party."
+            - "Provides users with a Space Ship simulation experience similar to the Christa McCauliffe space center in Pleasant Grove, UT"
+            - "Event-driven architecture"
         - time:             "August 2018 - April 2019"
           team:             "Team of 4"
           title:            "Nobis Sales Agent"
