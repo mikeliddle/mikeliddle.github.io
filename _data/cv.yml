@@ -1,11 +1,10 @@
 mliddle:
     profile: ""
     skills:
-        - "C#, Python3, Javascript, Typescript"
-        - "Flask, Angular.js, Vue.js, knockout.js, Swagger"
-        - "MySQL, SQLite, Dynamo DB, Firebase"
-        - "AWS, Azure, Google App Scripts, Linux"
-        - "Focuses: Big Data Science, Distributed System Design, Software Engineering"
+        - "C#, Python3, Javascript, Typescript, Swift"
+        - "Knockout.js, .NET Core"
+        - "Azure, Windows, Linux, iOS"
+        - "Focuses: Encryption and Security, Distributed System Design, Software Engineering"
         - "Foreign Languages: Swedish"
     education:
         - time:             "2016 - 2019"
@@ -19,9 +18,11 @@ mliddle:
           company:          "Microsoft: Intune"
           position:         "Software Engineer"
           responsibilities:
-            - "Research and implement SCEP, OpenConnect, OpenVPN, and other security protocols"
+            - "Research and implement SCEP, OpenConnect, OpenVPN, and other protocols"
             - "Research, design, and present architecture and implementation solutions"
             - "Built and maintained Microservices"  
+            - "Worked on authentication flows within Microsoft Tunnel"
+            - "Built iOS VPN Client"
         - time:             "May 2018 - Aug 2018"
           location:         "Redmond, WA"
           company:          "Microsoft: Intune"
@@ -30,7 +31,7 @@ mliddle:
             - "Designed and built an MS Graph API"
             - "Researched logging mechanisms and Message queueing systems"
             - "Built and maintained Microservices"
-        - time:             "May 2017 - Current"
+        - time:             "May 2017 - May 2020"
           location:         "Provo, UT"
           company:          "TrashTalk LLC"
           position:         "Software Consultant"
@@ -58,7 +59,7 @@ mliddle:
           responsibilities:
             - "Managed Virtual and physical servers and Drupal websites"
             - "Built help queues for statistics labs"
-            - "Built a server resource monitor to help the department load-balance servers"
+            - "Built a server resource monitor to help the department manually load-balance server workloads"
             - "Built an adaptive testing service for actuarial students"
     projects:
         - time:             "November 2019 - December 2019"
@@ -83,7 +84,7 @@ mliddle:
           title:            "Memo"
           technologies:     "AWS Lambda, Node.JS, AWS Dynamo DB, Alexa"
           responsibilities:
-            - "<a href='https://mikeliddle.com/Memo'>Found Here!</a>"
+            - "<a href='https://mikeliddle.com/Memo'>Found Here! (Removed from AWS)</a>"
             - "An Alexa skill for leaving messages for other individuals in a household"
             - "Built for an Alexa skill competition"
         - time:             "November 2016"
