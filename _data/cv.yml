@@ -84,7 +84,7 @@ mliddle:
           title:            "Memo"
           technologies:     "AWS Lambda, Node.JS, AWS Dynamo DB, Alexa"
           responsibilities:
-            - "<a href='https://mikeliddle.com/Memo'>Found Here! (Removed from AWS)</a>"
+            - "<a href='https://mikeliddle.github.io/Memo'>Found Here! (Removed from AWS)</a>"
             - "An Alexa skill for leaving messages for other individuals in a household"
             - "Built for an Alexa skill competition"
         - time:             "November 2016"
@@ -92,7 +92,7 @@ mliddle:
           title:            "Project Restoration"
           technologies:     "Angular.JS, W3.CSS, HTML, Javascript, CSS"
           responsibilities:
-            - "<a href='https://mikeliddle.com/restoration/index.html'>click here for demo</a>"
+            - "<a href='https://mikeliddle.github.io/restoration/index.html'>click here for demo</a>"
             - "Single-page website for a religion class"
             - "Currently broken due to hosting service migration"
         - time:             "June - July 2014"

@@ -14,7 +14,7 @@ keywords:         Mike Liddle, Software, Microsoft, IoT, Microservice, Programmi
 language:         "en"
 
 baseurl:          ""
-url:              "https://mikeliddle.com"
+url:              "https://mikeliddle.github.io"
 permalink:        /blog/:categories/:title
 cover:            /assets/mountain-alternative-cover.jpg
 disqus_shortname: "jekylldecent"
