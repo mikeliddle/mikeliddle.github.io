@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>Designing a Web API | Liddle Laboratory</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Designing a Web API | Liddle Laboratory</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Designing a Web API" />
+<meta name="author" content="mike" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Where to start" />
+<meta property="og:description" content="Where to start" />
+<link rel="canonical" href="http://0.0.0.0:4000/Designing-a-Web-API/" />
+<meta property="og:url" content="http://0.0.0.0:4000/Designing-a-Web-API/" />
+<meta property="og:site_name" content="Liddle Laboratory" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-12T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Designing a Web API" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mike"},"dateModified":"2019-03-12T00:00:00-05:00","datePublished":"2019-03-12T00:00:00-05:00","description":"Where to start","headline":"Designing a Web API","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/Designing-a-Web-API/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/images/logo.png"},"name":"mike"},"url":"http://0.0.0.0:4000/Designing-a-Web-API/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="Liddle Laboratory">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">Liddle Laboratory</h1>
+    <p class="lead">
+        My Project Blog
+    </p>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Designing a Web API&url=http://0.0.0.0:4000/Designing-a-Web-API/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://0.0.0.0:4000/Designing-a-Web-API/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://0.0.0.0:4000/Designing-a-Web-API/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&d=mm&r=x" alt="Mike">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="https://blog.liddlelaboratory.com">Mike</a><a target="_blank" href="" class="btn follow">Follow</a>
+                        <span class="author-description">Software Engineer, author of this Blog</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">Designing a Web API</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <h1 id="where-to-start">Where to start</h1>
+
+<p>In designing the Web API for TrashTalk, there are many thing I would do
+different. With that disclaimer, the approach I took was making the best
+of what I had. I was given a team of 7 students and whatever we knew to
+work with.</p>
+
+<p>The first step was to understand what the web application needed to do.
+I met with the founder of this company and reviewed the requirements and
+put into words a more formal specification. I then chose a chief architect
+from the team and we set out on creating an architectural document and
+specification. We designed the initial database and outlined the routes
+and how the routes should look, then turned to the team and started
+working.</p>
+
+<p>The first step to any good web API is a clear specification of
+functionality and resources. Without that, you’ll never know what to build.</p>
+
+<h2 id="technologies">Technologies</h2>
+
+<p>My dad, a Ph.D. in Computer Science, recently asked me about our technology
+decisions going into this project. My answer to him as to why we chose Vue
+and Flask on an Apache server was, “That’s what most people knew.” Our
+front-end developers all knew Vue, and one was very proficient in setting
+up a Vue project. Likewise, the back-end developers all knew python, and
+one had experience setting up a flask project from scratch. I had
+experience setting up, configuring, and maintaining Apache servers. So the
+choice was made. Use what you know when you need to move fast.</p>
+
+<p>Now, reflecting on our choices, the technologies employed fit our needs
+really well. Our Database is currently hosted through AWS using their
+database tools, and our server is an EC2 virtual server. The plan is to
+migrate the code to a serverless setup, reducing expenses and increasing
+performance. Flask applications transfer to serverless systems very easily
+so the choice to use Flask as an application framework was great!</p>
+
+<p>Vue.js has been less promising. We serve the pages statically, but being a
+SPA, it’s still hard to get a lot of good SEO on our page, though not
+too difficult, and it takes a little while to build the site and migrate,
+but using a separate build server and deploying the static pages only would
+speed up the deploy process and should be happening already.</p>
+
+<h2 id="databases-and-cap-theorem">Databases and CAP Theorem</h2>
+
+<p>We chose a relational database for a couple of reasons:</p>
+
+<ol>
+  <li>We can afford to localize data into separate databases per customer or groupings of customers.</li>
+  <li>RDBMS’s are very fast at filtering data and getting specific pieces of data or joining related resources even without direct id’s.</li>
+  <li>We knew how to run SQL queries.</li>
+</ol>
+
+<p>Looking at the data and how we use it, a relational database is an ok fit,
+excluding two use-cases, and we care most about availability. Partitions
+are easy to handle by having multiple databases and a serverless
+architecture. Localities can be directed to different regions on AWS and
+multiple services can cooperate easily without knowing about each other.
+Availability is achieved by moving serverless and having multiple
+databases and auto-scaling those. These are known problems.</p>
+
+<h3 id="a-note-on-sql-vs-nosql">A note on SQL vs NOSQL</h3>
+
+<p>The data we are using is largely relational however, using a NOSQL database
+might fit better for our use case on getting the container status. If I
+have a database table for sensor events, telling us fill-level, and
+containers, telling us where the container is and how big it is, I need to
+perform a few Left Outer Joins in order to get the resource as we would
+like it. Previously, we used firebase, and needed to loop over the entire
+dataset to find which event was the most recent and then use it. This was
+almost just as bad as what we have moved to. Instead of this, we’ve
+discussed having a NOSQL database that would store the most recent event
+for each sensor. This removes the need for Left Outer Joins, and speeds up
+the process of getting a container’s status, which occurs very frequently.</p>
+
+<p>Another potential use-case is our routes. A route consists of an ID,
+company information, and an ordered collection of containers. Since order
+is significant, we want to have an easy way of enforcing that, which could
+be acheived in a NOSQL database. This has been done in SQL databases
+before, and works there, but we could simplify this with a NOSQL database.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>This will be covered in my next article.</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2019-03-12">12 Mar 2019</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Technology">Technology</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#WebAPIs">#WebAPIs</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//TrashCan-Problem/"> &laquo; The Trashcan Problem</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="//Cross-Signed-Certificates/">Cross-Signed Certificates &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+
+    
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#Technology">Technology (4)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Music">Music (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#project">project (1)</a>
+                
+            
+            
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2024 Liddle Laboratory 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+
+
+</body>
+</html>

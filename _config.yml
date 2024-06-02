@@ -1,43 +1,58 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Site
+name: "Liddle Laboratory"
+title: "Liddle Laboratory"
+description: "My Project Blog"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+include: ["_pages"]
+permalink: /:title/
 
-# Site settings
-title:            Mike Liddle Software Engineer and Student
-title_logo:       Mike Liddle
-subtitle:         Projects, Tutorials, Experiences, Software, and more
-description:      Mike Liddle's blog about his experiences with different projects and technologies. Software is growing and we must learn to keep up. Software developers are seeking to stay on top of their market by learning and practicing new technologies.
-keywords:         Mike Liddle, Software, Microsoft, IoT, Microservice, Programming, Project, Management, Developer, Engineer, Utah
-language:         "en"
-
-baseurl:          ""
-url:              "https://mikeliddle.github.io"
-permalink:        /blog/:categories/:title
-cover:            /assets/mountain-alternative-cover.jpg
-disqus_shortname: "jekylldecent"
-
-# Build settings
-sass:
-    style: compressed
-markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-include: ['_pages']
-exclude: [vendor, "developer-tools"]
+# Authors
+authors:
+  mike:
+    name: Mike
+    display_name: Mike
+    gravatar: 
+    email: 
+    web: https://blog.liddlelaboratory.com
+    description: "Software Engineer, author of this Blog"
+  
+# Plugins
 plugins:
-  - jekyll-mentions
-  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  ignore:
-    envs: [local]
-  blanklines: true
-  startings: [head, body]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

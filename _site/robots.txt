@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: index.html
+Host: https://mikeliddle.github.io
+Sitemap: https://mikeliddle.github.io/sitemap.xml

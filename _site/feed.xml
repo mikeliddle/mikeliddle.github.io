@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liddle Laboratory</title>
+    <description>My Project Blog</description>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 02 Jun 2024 18:31:47 -0500</pubDate>
+    <lastBuildDate>Sun, 02 Jun 2024 18:31:47 -0500</lastBuildDate>
+    <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Midi Bass Pedals</title>
+        <description>
+</description>
+        <pubDate>Sun, 02 Jun 2024 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/midi-bass-keys/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/midi-bass-keys/</guid>
+        
+        <category>music</category>
+        
+        <category>synth</category>
+        
+        <category>midi</category>
+        
+        <category>project</category>
+        
+        
+        <category>Music</category>
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Cross-Signed Certificates</title>
+        <description>&lt;h1 id=&quot;who-do-you-trust&quot;&gt;Who do you trust?&lt;/h1&gt;
+
+&lt;p&gt;One of the earliest internet protocols was http. Very quickly, engineers
+discovered a need to secure content that they sent/received. This lead to
+the development of the HTTPS, SSL, and TLS protocols. One of the main
+features to this protocol is the reliance on X.509 Certificates&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The
+idea behind certificates is that developers can go to a central authority,
+request authorization, and have a certificate that others can trust, if they
+trust that central authority.&lt;/p&gt;
+
+&lt;p&gt;This works just fine if every connecting agent has trusts that central authority,
+however, due to the complexities of X.509 Certificates, trust verification, and
+the diversity of revocation checking methods, certificate revocation is
+effectively broken for websites, with most major browsers performing a “best
+effort” check if they check at all.&lt;/p&gt;
+
+&lt;p&gt;Sometimes Certification Authorities are compromised though. In 2011, a reseller 
+(RA) for Comodo (one of the largest CAs) was compromised, allowing several 
+fraudulent certificates to be issued and trusted for google.com and other major 
+domains. Later that year, DigiNotar was also compromised, issuing more fraudulent 
+certs. The mitigation was to revoke the intermediate cert/root cert that was 
+compromised, and remove the certificate from each computer’s trust store. Doing so,
+however, eliminated trust for all sites who could be trusted, but had certificates 
+issued by Comodo’s reseller or DigiNotar. So those sites were effectively offline 
+until their certificates were re-issued (which is not a definite time frame).&lt;/p&gt;
+
+&lt;h1 id=&quot;cross-signing&quot;&gt;Cross-Signing&lt;/h1&gt;
+
+&lt;p&gt;Cross-signing a certificate allows for a private/public key pair to be signed
+by multiple CA’s. By getting a cross-signed certificate, you effectively have
+two certificates that can be used interchangeably depending on trust. In a 
+distributed environment, each node could have a trust authority, with which it
+issues a certificate. That certificate can then be used to verify trust as, if
+we trust our peer, and they trust another node, we can trust that node.&lt;/p&gt;
+
+&lt;p&gt;Along the same lines, having multiple certificates allows for redundancy in a
+system. If our noe has a certificate issued by Comodo and Digicert, and
+our system was operating during 2011, once Comodo was removed from trust on
+the different nodes, the nodes would continue to operate uninterrupted because
+of the redundant certificate.&lt;/p&gt;
+
+&lt;p&gt;This issue is rare, however, with computational power increasing every year,
+as well as connectivity speeds, it is increasingly difficult to detect a 
+compromise. This leads many systems to rotate certificates on a regular interval 
+so that even if the certificate is compromised, it can’t damage the system for any
+significant period of time.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/X.509&quot;&gt;X.509 on Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 13 Jan 2020 00:00:00 -0600</pubDate>
+        <link>http://0.0.0.0:4000/Cross-Signed-Certificates/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/Cross-Signed-Certificates/</guid>
+        
+        <category>X509</category>
+        
+        <category>X.509</category>
+        
+        <category>Cryptography</category>
+        
+        <category>Trust</category>
+        
+        <category>DistributedSystems</category>
+        
+        
+        <category>Technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Designing a Web API</title>
+        <description>&lt;h1 id=&quot;where-to-start&quot;&gt;Where to start&lt;/h1&gt;
+
+&lt;p&gt;In designing the Web API for TrashTalk, there are many thing I would do
+different. With that disclaimer, the approach I took was making the best
+of what I had. I was given a team of 7 students and whatever we knew to
+work with.&lt;/p&gt;
+
+&lt;p&gt;The first step was to understand what the web application needed to do.
+I met with the founder of this company and reviewed the requirements and
+put into words a more formal specification. I then chose a chief architect
+from the team and we set out on creating an architectural document and
+specification. We designed the initial database and outlined the routes
+and how the routes should look, then turned to the team and started
+working.&lt;/p&gt;
+
+&lt;p&gt;The first step to any good web API is a clear specification of
+functionality and resources. Without that, you’ll never know what to build.&lt;/p&gt;
+
+&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
+
+&lt;p&gt;My dad, a Ph.D. in Computer Science, recently asked me about our technology
+decisions going into this project. My answer to him as to why we chose Vue
+and Flask on an Apache server was, “That’s what most people knew.” Our
+front-end developers all knew Vue, and one was very proficient in setting
+up a Vue project. Likewise, the back-end developers all knew python, and
+one had experience setting up a flask project from scratch. I had
+experience setting up, configuring, and maintaining Apache servers. So the
+choice was made. Use what you know when you need to move fast.&lt;/p&gt;
+
+&lt;p&gt;Now, reflecting on our choices, the technologies employed fit our needs
+really well. Our Database is currently hosted through AWS using their
+database tools, and our server is an EC2 virtual server. The plan is to
+migrate the code to a serverless setup, reducing expenses and increasing
+performance. Flask applications transfer to serverless systems very easily
+so the choice to use Flask as an application framework was great!&lt;/p&gt;
+
+&lt;p&gt;Vue.js has been less promising. We serve the pages statically, but being a
+SPA, it’s still hard to get a lot of good SEO on our page, though not
+too difficult, and it takes a little while to build the site and migrate,
+but using a separate build server and deploying the static pages only would
+speed up the deploy process and should be happening already.&lt;/p&gt;
+
+&lt;h2 id=&quot;databases-and-cap-theorem&quot;&gt;Databases and CAP Theorem&lt;/h2&gt;
+
+&lt;p&gt;We chose a relational database for a couple of reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;We can afford to localize data into separate databases per customer or groupings of customers.&lt;/li&gt;
+  &lt;li&gt;RDBMS’s are very fast at filtering data and getting specific pieces of data or joining related resources even without direct id’s.&lt;/li&gt;
+  &lt;li&gt;We knew how to run SQL queries.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Looking at the data and how we use it, a relational database is an ok fit,
+excluding two use-cases, and we care most about availability. Partitions
+are easy to handle by having multiple databases and a serverless
+architecture. Localities can be directed to different regions on AWS and
+multiple services can cooperate easily without knowing about each other.
+Availability is achieved by moving serverless and having multiple
+databases and auto-scaling those. These are known problems.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-note-on-sql-vs-nosql&quot;&gt;A note on SQL vs NOSQL&lt;/h3&gt;
+
+&lt;p&gt;The data we are using is largely relational however, using a NOSQL database
+might fit better for our use case on getting the container status. If I
+have a database table for sensor events, telling us fill-level, and
+containers, telling us where the container is and how big it is, I need to
+perform a few Left Outer Joins in order to get the resource as we would
+like it. Previously, we used firebase, and needed to loop over the entire
+dataset to find which event was the most recent and then use it. This was
+almost just as bad as what we have moved to. Instead of this, we’ve
+discussed having a NOSQL database that would store the most recent event
+for each sensor. This removes the need for Left Outer Joins, and speeds up
+the process of getting a container’s status, which occurs very frequently.&lt;/p&gt;
+
+&lt;p&gt;Another potential use-case is our routes. A route consists of an ID,
+company information, and an ordered collection of containers. Since order
+is significant, we want to have an easy way of enforcing that, which could
+be acheived in a NOSQL database. This has been done in SQL databases
+before, and works there, but we could simplify this with a NOSQL database.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;This will be covered in my next article.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Mar 2019 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/Designing-a-Web-API/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/Designing-a-Web-API/</guid>
+        
+        <category>WebAPIs</category>
+        
+        
+        <category>Technology</category>
+        
+      </item>
+    
+      <item>
+        <title>The Trashcan Problem</title>
+        <description>&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;I currently consult a local startup company that uses IoT sensors to
+monitor the status of an organizations trashcans and dumpsters. More
+important than trashcans is likely dumpsters, however, since more money
+is wasted by collecting an empty dumpster as opposed to an empty trash can
+50 feet away from the next.&lt;/p&gt;
+
+&lt;p&gt;IoT systems create lots of data, which can be really fun to analyze. I
+have been doing a lot of data science lately, and I realized there are a
+lot of features we can add that may help the trashcan situations. Let’s say
+that I have a nice campus, like Disneyland, and I want to make sure that
+if someone has trash, they can throw it away. How can I ensure that I have
+my trashcans in the right place?&lt;/p&gt;
+
+&lt;h2 id=&quot;method&quot;&gt;Method&lt;/h2&gt;
+
+&lt;p&gt;We are going to look at several similar existing problems to see if there
+is already a good way of solving our problem. Likely its been solved, but
+there’s a chance that it hasn’t been formalized and we will have to adapt
+an existing problem or algorithm to our situation. The goal here is to
+fully understand our problem, it’s complexity and it’s simplicity. If we
+can avoid a complicated algorithm, its best to do that.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-cover-problem-np-complete&quot;&gt;Set Cover Problem (NP-Complete)&lt;/h2&gt;
+
+&lt;aside&gt;
+   &lt;figure class=&quot;right&quot;&gt;
+      &lt;img src=&quot;/assets/img/SetCover.png#right&quot; /&gt;
+      &lt;figcaption&gt;Set Cover&lt;/figcaption&gt;
+   &lt;/figure&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Immediately, this seems to be an NP-Complete problem. I need to cover
+another set by adding a trashcan. This scared me at first, however, since
+Set-cover is a known NP-Complete problem. So with the 100’s of trashcans
+that Disneyland has, we’re exceeding practical run times. But then I
+realized that’s not my input-set cardinality, that’s my solution set size.
+How can we choose a way to represent the sets? Maybe we can triangulate
+between restaurants and rides to call each significant point a point in
+our sets and specify a bound of 50 feet to allow a trashcan cover a ride,
+but that doesn’t take into account the amount of trash or popularity of
+the area. So I decided that this wouldn’t be the best-fit problem to think
+of.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-art-gallery-problem-np-hard&quot;&gt;The Art Gallery Problem (NP-Hard)&lt;/h2&gt;
+
+&lt;p&gt;Then I found the art gallery problem, which is simply this: Where
+can I put the minimum number of security guards to monitor every area in
+a museum. This works well for our problem, since we are an optimization
+problem, dealing with location and placement, but again, this doesn’t deal
+directly with popularity, i.e. the Mona Lisa wouldn’t be any more heavily
+guarded than a child’s hand-turkey in these problems. This problem is also
+NP-Hard, which means that if we could simplify this problem we might be
+able to find a good algorithm for it, but thinking of our problem like this
+will prove to make it inefficient to solve.&lt;/p&gt;
+
+&lt;h2 id=&quot;k-means-clustering&quot;&gt;K-means Clustering&lt;/h2&gt;
+
+&lt;p&gt;During my Big Data class, we talked about K-means clustering, which could
+be a great method of visualizing the data. If we plot the quantity of trash
+produced as a data-point, with one point for each unit, and the x and y
+coordinates are simply location, we can create some good clusters to see
+areas where we are not currently collecting on a map, and given a high
+density of data points(every trashcan’s data is in the same spot), if we
+force our algorithm to add a cluster (\(k = k + 1\)) then one of the
+clusters should divide, right? We will revisit clustering.&lt;/p&gt;
+
+&lt;h2 id=&quot;bubble-charts&quot;&gt;Bubble Charts&lt;/h2&gt;
+
+&lt;aside&gt;
+   &lt;figure class=&quot;left&quot;&gt;
+      &lt;img src=&quot;/assets/img/BubblePlot.png#left&quot; /&gt;
+      &lt;figcaption&gt;Bubble Chart&lt;/figcaption&gt;
+   &lt;/figure&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;I bring this up, as this is how I started to visualize the problem. The
+size of the bubble represents the amount of trash generated in an area,
+the location of the center of the bubble is the location (lat/lng) of the
+trashcan. So if I have two distant bubbles that overlap, I need to insert
+another trashcan in the middle. If I have a bubble that gets too big, I
+need to add another trashcan nearby to alleviate the load on the other
+trashcan. The problem here is this isn’t an algorithm or problem, just a
+visualization. But now we have something we can use set-cover and k-means
+on. Using a bubble chart, we can plot points proportionally using a
+gaussian normal distribution and create a dataset that we can then cover
+with a density based set-cover algorithm or some density-based clustering
+algorithm.&lt;/p&gt;
+
+&lt;h2 id=&quot;dbscan&quot;&gt;DBSCAN&lt;/h2&gt;
+
+&lt;aside&gt;
+   &lt;figure class=&quot;right&quot;&gt;
+      &lt;img src=&quot;/assets/img/Gaussian.png#right&quot; /&gt;
+      &lt;figcaption&gt;DBSCAN on a Gaussian Distribution&lt;/figcaption&gt;
+   &lt;/figure&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;This algorithm is great for density-based clustering. DBSCAN will, given
+an epsilon and min-points, cluster the points accounting for noise, and
+add clusters as needed. This can be used to analyze how the trash
+collection is currently, answering the question, “Do I need to add another
+trashcan?” If the number of clusters produced by a DBSCAN don’t match the
+actual number of trashcans, we have an abnormal distribution of density in
+some area. This assumes, however, that you don’t have any trashcans in the
+same place, or side-by-side.&lt;/p&gt;
+
+&lt;p&gt;This algorithm may help us determine if we need to add another trashcan,
+based on density. But ultimately, that’s over complicating the issue. Why
+not just look at how fast a trashcan is filling up? That’s not our only
+question here. We need to know where to place the next trashcan.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Our algorithm will be as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;We look at the frequency of collection for all trashcans.&lt;/li&gt;
+  &lt;li&gt;We compare that to pre-established thresholds.&lt;/li&gt;
+  &lt;li&gt;We determine who the “neighbors” are for the trashcan that exceeds the threshold.&lt;/li&gt;
+  &lt;li&gt;We generate random points(Gaussian distribution) using a proportional number of points per trashcan to trash generated per trashcan.&lt;/li&gt;
+  &lt;li&gt;Run K-means on the existing dataset with the three centroids being the current trashcan locations&lt;/li&gt;
+  &lt;li&gt;Add a new centroid and rerun K-means to determine the optimal placement for the containers.&lt;/li&gt;
+  &lt;li&gt;Rerun 3-6 for each trashcan exceeding the threshold.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Analyzing this algorithm we just created, our most complex part is K-means
+which has a complexity of \(O(k*N*T)\) where T is the number of iteration, k is the number of clusters, and N is the number of samples. This will be repeated for every trashcan, so in worst case, our algorithm will likely be \(O(k^2*N*T)\) Not bad for a set-cover type problem.&lt;/p&gt;
+
+&lt;p&gt;This solution ignores infrastructure concerns, such as, “that’s a building,
+I can’t put a trashcan there” but gives a good solution if we are looking
+at a campus type location.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 30 Jan 2019 00:00:00 -0600</pubDate>
+        <link>http://0.0.0.0:4000/TrashCan-Problem/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/TrashCan-Problem/</guid>
+        
+        <category>Algorithms</category>
+        
+        
+        <category>Technology</category>
+        
+      </item>
+    
+      <item>
+        <title>The Static Blog</title>
+        <description>&lt;h1 id=&quot;the-static-blog&quot;&gt;The Static Blog&lt;/h1&gt;
+
+&lt;p&gt;This is my first attempt at making a static blog. I recently realized that I would
+have to switch my hosting providers and wanted to find a free way to host a blog
+and my website. My website was made using static HTML pages and a javascript framework
+(which was, of course, overkill) which is easy to host from github pages or a similar
+service. So I changed my DNS entry for my domain and my website was live from github.&lt;/p&gt;
+
+&lt;p&gt;The issue came, however, when I decided I wanted to start my own tech blog. Suddenly
+I had memories of Wordpress come to me and I thought, “hey, maybe a CMS like Wordpress
+is the best option.” It’s not hard to map a subdomain to another IP and host a site
+somewhere else, but then I run into the problem that it isn’t free. The problem with
+a CMS is that you need some sort of back-end management system, whether that’s a MySQL
+database and templating engine, like wordpress uses, or just a dynamic templating engine.&lt;/p&gt;
+
+&lt;p&gt;So I looked on Google how to make a static blog, not using a CMS. I still rely on a
+templating engine and template, but since all the pages can be statically generated,
+I don’t have to worry about having a live back-end system that manages the content. I
+decided that Jekyll would be the best option, first because Github supports it, but also,
+it has a large community of support, I can write articles using markdown, and I don’t
+have to worry about any styling.&lt;/p&gt;
+
+&lt;p&gt;My reasoning for blogging is simple: I have experience that others can enjoy as well. I
+enjoy watching videos on YouTube or reading tech blogs that talk about the cool projects
+people have worked on, as well as reviews of the latest and greatest technology. Similarly,
+I enjoy reading the experiences others have in their careers and learning from their
+experiences.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Jan 2019 00:00:00 -0600</pubDate>
+        <link>http://0.0.0.0:4000/The-Static-Blog/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/The-Static-Blog/</guid>
+        
+        <category>Blogging</category>
+        
+        
+        <category>Technology</category>
+        
+      </item>
+    
+  </channel>
+</rss>

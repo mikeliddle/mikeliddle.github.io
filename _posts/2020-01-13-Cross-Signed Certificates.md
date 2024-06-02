@@ -3,8 +3,8 @@ layout:            post
 title:             "Cross-Signed Certificates"
 menutitle:         "Cross-Signed Certificates and Distributed Trust"
 category:          Technology
-author:            ML
-tags:              X509 X.509 Cryptography Trust Distributed Systems
+author:            mike
+tags:              X509 X.509 Cryptography Trust DistributedSystems
 ---
 
 # Who do you trust?

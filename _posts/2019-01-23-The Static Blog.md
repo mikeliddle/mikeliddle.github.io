@@ -3,8 +3,8 @@ layout:            post
 title:             "The Static Blog"
 menutitle:         "The Static Blog"
 category:          Technology
-author:            ML
-tags:              Static Blogging
+author:            mike
+tags:              Blogging
 ---
 
 # The Static Blog
@@ -23,7 +23,7 @@ a CMS is that you need some sort of back-end management system, whether that's a
 database and templating engine, like wordpress uses, or just a dynamic templating engine.
 
 So I looked on Google how to make a static blog, not using a CMS. I still rely on a
-templating engine and template[^1], but since all the pages can be statically generated,
+templating engine and template, but since all the pages can be statically generated,
 I don't have to worry about having a live back-end system that manages the content. I
 decided that Jekyll would be the best option, first because Github supports it, but also,
 it has a large community of support, I can write articles using markdown, and I don't
@@ -34,5 +34,3 @@ enjoy watching videos on YouTube or reading tech blogs that talk about the cool 
 people have worked on, as well as reviews of the latest and greatest technology. Similarly,
 I enjoy reading the experiences others have in their careers and learning from their
 experiences.
-
-[^1]: This template was taken from JekyllDecent by jwillmer on Github

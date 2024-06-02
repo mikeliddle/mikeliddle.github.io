@@ -3,8 +3,8 @@ layout:            post
 title:             "Designing a Web API"
 menutitle:         "Designing a Web API - TrashTalk"
 category:          Technology
-author:            ML
-tags:              Web APIs
+author:            mike
+tags:              WebAPIs
 ---
 
 # Where to start

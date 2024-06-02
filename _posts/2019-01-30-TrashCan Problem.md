@@ -4,8 +4,8 @@ title:             "The Trashcan Problem"
 menutitle:         "The Trashcan Problem - Finding an Algorithm"
 math:              true
 category:          Technology
-author:            ML
-tags:              Applying Algorithms
+author:            mike
+tags:              Algorithms
 ---
 
 ## The Problem
@@ -37,7 +37,7 @@ can avoid a complicated algorithm, its best to do that.
 {% raw %}
 <aside>
    <figure class="right">
-      <img src="/media/img/SetCover.png#right" />
+      <img src="/assets/img/SetCover.png#right" />
       <figcaption>Set Cover</figcaption>
    </figure>
 </aside>
@@ -83,7 +83,7 @@ clusters should divide, right? We will revisit clustering.
 {% raw %}
 <aside>
    <figure class="left">
-      <img src="/media/img/BubblePlot.png#left" />
+      <img src="/assets/img/BubblePlot.png#left" />
       <figcaption>Bubble Chart</figcaption>
    </figure>
 </aside>
@@ -107,7 +107,7 @@ algorithm.
 {% raw %}
 <aside>
    <figure class="right">
-      <img src="/media/img/Gaussian.png#right" />
+      <img src="/assets/img/Gaussian.png#right" />
       <figcaption>DBSCAN on a Gaussian Distribution</figcaption>
    </figure>
 </aside>
