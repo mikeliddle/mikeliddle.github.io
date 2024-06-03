@@ -2,8 +2,8 @@
 name: "Liddle Laboratory"
 title: "Liddle Laboratory"
 description: "My Project Blog"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'assets/img/logo.png'
+favicon: 'assets/img/logo.png'
 include: ["_pages"]
 permalink: /:title/
 
