@@ -15,7 +15,7 @@ the development of the HTTPS, SSL, and TLS protocols. One of the main
 features to this protocol is the reliance on X.509 Certificates[^1]. The
 idea behind certificates is that developers can go to a central authority,
 request authorization, and have a certificate that others can trust, if they
-trust that central authority. 
+trust that central authority.
 
 This works just fine if every connecting agent has trusts that central authority,
 however, due to the complexities of X.509 Certificates, trust verification, and
