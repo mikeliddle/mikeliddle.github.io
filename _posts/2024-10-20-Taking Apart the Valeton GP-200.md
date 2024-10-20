@@ -28,6 +28,35 @@ The first Circuit I was able to identify was the MIDI input circuit. The Midi in
 
 The board also uses a lot of 8-bit shift registers. Interestingly, there are different shift registers, even though they are all 8-bit shift registers, likely for combining the various digital inputs from the MFX unit. While one side of the board is packed with capacitors, OP Amps and ports, the other has a bunch of shift registers near where the rotary encoders, and breakout boards for the foot switches attach.
 
-As an example, there were several ICs around the board with the marking "SGM 82702XS8 N2EKC" which are OP Amps. These
+As an example, there were several ICs around the board with the marking "SGM 82702XS8 N2EKC" which are OP Amps.
 
 https://www.nxp.com/part/MIMXRT106FDVL6B#/
+
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162721.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162802.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162806.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162829.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162834.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162844.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163118.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163123.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163137.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163156.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163202.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163206.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163216.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163222.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163225.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163229.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163233.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163236.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163300.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163319.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163324.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163332.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163339.jpg)
+![GP200 1]({{ site.baseurl }}/assets/img/GP200/GP200Back.jpg)
+
+## Future Steps
+
+I hope to be able to look into this interesting hardware more, however it's been a long time since I last wrote. It looks like I need to figure out how to publish articles more regularly before I can take more time for longer projects like this.
