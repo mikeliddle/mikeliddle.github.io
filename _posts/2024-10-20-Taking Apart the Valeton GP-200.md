@@ -4,7 +4,7 @@ title:             "Valeton GP-200 Teardown"
 menutitle:         "Valeton GP-200 Teardown"
 category:          Technology
 author:            mike
-image:             assets/img/GP200/ValetonGP200.jpg
+image:             assets/img/GP200/GP200Back.jpg
 tags:              Music, Technology
 ---
 
@@ -55,7 +55,6 @@ https://www.nxp.com/part/MIMXRT106FDVL6B#/
 ![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163324.jpg)
 ![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163332.jpg)
 ![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163339.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/GP200Back.jpg)
 
 ## Future Steps
 
