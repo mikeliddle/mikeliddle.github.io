@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
+{
+  "name": "Jekyll",
+  "image": "mcr.microsoft.com/devcontainers/jekyll:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "latest"
+    }
+  },
+  "forwardPorts": [
+		// Jekyll server
+		4000,
+		// Live reload server
+		35729
+	],
+  "remoteEnv": {
+    "JEKYLL_ENV": "DEBUG"
+  }
+}
