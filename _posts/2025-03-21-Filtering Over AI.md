@@ -4,8 +4,8 @@ title: "Filtering Over AI"
 author: mike
 categories: ["AI", "project", "technology"]
 tags: ["AI", "project", "technology"]
-image: assets/img/
-description: ""
+image: assets/img/drain.jpg
+description: "To reduce the cost of AI, we need to filter requests before they hit the generative AI."
 featured: true
 ---
 
@@ -21,7 +21,7 @@ This randomness requires extensive data sets to coallese into a useful output. A
 
 # Filtering
 
-This is why the industry needs to adopt more request filtering. Classifiers have been around for a lot longer than generative AI, and do a great job of taking even natural language and classifying it into a set of categories. This is a much simpler problem than genAI, and can be done much faster. Why don't we fix genAI by filtering out some requests and evaluating them based on a classification. Classification can be done cheaply, and efficiently, and many times, a generative AI is unnecessary to answer.
+This is why the industry needs to adopt more request filtering. Classifiers have been around for a lot longer than generative AI, and do a great job of taking even natural language and classifying it into a set of categories. This is a much simpler problem than generative AI, and can be done much faster. Why don't we fix generative AI by filtering out some requests and evaluating them based on a classification. Classification can be done cheaply, and efficiently, and many times, a generative AI is unnecessary to answer.
 
 "But," you might ask, "why would you ask a chatbot a question it shouldn't answer?" Well, the powers that be are trying to make these ubiquitous, so by design, they should be the one-stop shop for all questions and interactions. Even though they are bad at it. This is why it is on the service owners to filter out requests and decide how to best answer them. For example, asking a chatbot, "What is 2+2?" can easily be classified as a math question. This can be fed into a simple, or even highly complex calculator, which would give an accurate, deterministic answer. That is what people want from math. I don't want a lesson on number theory or a hallucinated answer. I want the answer.
 
@@ -73,6 +73,12 @@ When you hit this endpoint, the service knows where you're coming from (IP), who
 
 # Stepping Forward
 
-I mentioned taking the filtering further. There's this concept called "Vibe Coding" where the thesis is you feed the AI prompts and you embrace what it gives you. Don't like what you get back, or it doesn't work? Re-roll. What a way to spend a million dollars. Why should I ever have to re-roll? With programming, where you have programs built to tell you if something will run and if not, why, why are we getting bad answers? Why can't we include a filter as part of our generative AI to weed out bad results before they happen? Why aren't we adding a filter layer during the token generation that is able to identify interpreter/compiler errors and correct them without a user needing to engage again, and likely again. This back and forth gets very expensive, and needlessly so. If you find a compilation error, its often a one-line error. Re-rolling a single line with extra input, is much cheaper than re-rolling an entire prompt.
+I mentioned taking the filtering further. There's this concept called "Vibe Coding" where the thesis is you feed the AI prompts and you embrace what it gives you. Don't like what you get back, or it doesn't work? Re-roll. What a way to spend a million dollars. Why should I ever have to re-roll? With programming, where you have programs built to tell you if something will run and if not, why, why are we getting bad answers? Why can't we include a filter as part of our generative AI to weed out bad results before they happen? Why aren't we adding a filter layer during the token generation that is able to identify interpreter/compiler errors and correct them without a user needing to engage again, and likely again. This back and forth gets very expensive, and needlessly so. If you find a compilation error, its often a one-line error. Even re-rolling a single line with extra input, is much cheaper than re-rolling an entire prompt.
+
+We can use this classifier layered with AI to give the user better results every time. And this will result in the user wanting to adopt AI even more, instead of getting frustrated and deciding its not worth the headache. Part of the classification output could be re-tokenizing the request to make it better for the AI to consume. People have started "Prompt Engineering" courses, by why should we have to learn how to talk with a computer when we can talk to a person "just fine?" I mean, if these classes are going to make people more civil and better at communicating, by all means, everyone should be in them. But I don't think people should need to learn how to talk to a computer differently for it to do what they want if our goal is to make these tasks easier. Calculators work so well because they are intuitive to someone who understands math, not just to the engineers who build and design calculators.
+
+That healthy abstraction should be considered the minimum bar for generative AI. End-users are nutoriously stubborn and excellent at breaking expectations. We shouldn't try to have them get good, instead the AI should get good and understand what someone wants better. If you want ubiquity from an AI, it should make things easier coming from where you are, you shouldn't have to learn new skills in order to get the output you expect or want.
 
 # Conclusion
+
+All of this is not to take away from the advantage that is non-deterministic entropy in AI. The thing that makes generative AI so expensive is what makes it so versatile, useful, and powerful. The issue is, most of our problems don't need that power. we don't need to smash a fly with a bulldozer. We don't need to use a generative AI to do simple calculations, or direct us to what should be a bookmarked site. We don't need to re-solve solved problems. We should consider filtering requests to make our AI more intelligent and less expensive.
