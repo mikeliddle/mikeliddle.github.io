@@ -12,6 +12,10 @@
                 "isDefault": true
             },
             "isBackground": true,
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "problemMatcher": []
         },
         {
             "label": "Build",
@@ -20,7 +24,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
+            }
         }
     ]
 }

@@ -6,7 +6,6 @@ categories: [ Music, project ]
 tags: [music, bass, project]
 image: assets/img/bass/BassWithPickguard.jpg
 description: "Part 1 of my Bass Build"
-featured: true
 ---
 
 I've played the bass for quite a while but I've been primarily playing on an
