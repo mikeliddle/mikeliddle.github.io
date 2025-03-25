@@ -7,7 +7,7 @@ logo: 'assets/img/logo.png'
 favicon: 'assets/img/logo.png'
 include: ["_pages"]
 permalink: /:title/
-baseurl: "https://mikeliddle.github.io"
+baseurl: "https://liddlelaboratory.com"
 
 # Authors
 authors:
@@ -16,7 +16,7 @@ authors:
     display_name: Mike
     gravatar: 537fee6088011d6068b011a99170f4f5d9491f2dd52b15daf630d37b78fa5d65?s=256
     email:
-    web: https://blog.liddlelaboratory.com
+    web: https://liddlelaboratory.com/blog
     description: "Software Engineer, author of this Blog"
 
 # Plugins

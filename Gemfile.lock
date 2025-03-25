@@ -82,7 +82,7 @@ GEM
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    liddlelab-theme (0.0.3)
+    liddlelab-theme (0.0.4)
       jekyll-archives (~> 2.2)
       jekyll-feed (~> 0.17)
       jekyll-paginate (~> 1.1)
@@ -166,7 +166,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  liddlelab-theme (~> 0.0.3)
+  liddlelab-theme (~> 0.0.4)
 
 BUNDLED WITH
    2.6.6

@@ -6,7 +6,7 @@
         {
             "label": "Serve",
             "type": "shell",
-            "command": "bundle exec jekyll serve --livereload --future --config _config.yml,_debug.yml -d _site",
+            "command": "bundle exec jekyll serve --future --config _config.yml,_debug.yml -d _site",
             "group": {
                 "kind": "test",
                 "isDefault": true
