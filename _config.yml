@@ -8,6 +8,10 @@ favicon: 'assets/img/logo.png'
 include: ["_pages"]
 permalink: /:title/
 baseurl: "https://liddlelaboratory.com"
+repo: "mikeliddle/mikeliddle.github.io"
+repo_id: "MDEwOlJlcG9zaXRvcnkxMjg4NDUyODA="
+category: "General"
+category_id: "DIC_kwDOB64F4M4Cobms"
 
 # Authors
 authors:

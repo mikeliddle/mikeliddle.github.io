@@ -11,6 +11,9 @@
                 "kind": "test",
                 "isDefault": true
             },
+            "dependsOn": [
+                "Install Dependencies"
+            ],
             "isBackground": true,
             "runOptions": {
                 "runOn": "folderOpen"
@@ -21,6 +24,27 @@
             "label": "Build",
             "type": "shell",
             "command": "bundle exec jekyll build",
+            "dependsOn": [
+                "Install Dependencies"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "rm -rf _site",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "bundle install",
             "group": {
                 "kind": "build",
                 "isDefault": true
