@@ -15,9 +15,6 @@
                 "Install Dependencies"
             ],
             "isBackground": true,
-            "runOptions": {
-                "runOn": "folderOpen"
-            },
             "problemMatcher": []
         },
         {

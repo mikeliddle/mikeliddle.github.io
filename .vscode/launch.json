@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Jekyll Serve",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "bundle exec jekyll serve --future --config _config.yml,_debug.yml -d _site",
+            "cwd": "${workspaceRoot}",
+            "serverReadyAction": {
+                "pattern": "Server address: http://127.0.0.1:([0-9]+)/",
+                "uriFormat": "http://localhost:%s/",
+                "action": "openExternally"
+            },
+            "preLaunchTask": "Install Dependencies"
+        },
+        {
+            "name": "Jekyll Build",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "bundle exec jekyll build",
+            "cwd": "${workspaceRoot}"
+        }
+    ]
+}

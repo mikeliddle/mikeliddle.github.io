@@ -4,7 +4,7 @@ title: "Filtering Over AI"
 author: mike
 categories: ["AI", "project", "technology"]
 tags: ["AI", "project", "technology"]
-image: assets/img/drain.jpg
+image: assets/img/drain-346.jpg
 description: "To reduce the cost of AI, we need to filter requests before they hit the generative AI."
 featured: true
 ---

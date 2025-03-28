@@ -8,6 +8,13 @@
       "version": "latest"
     }
   },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
   "forwardPorts": [
 		// Jekyll server
 		4000,
@@ -16,5 +23,6 @@
 	],
   "remoteEnv": {
     "JEKYLL_ENV": "DEBUG"
-  }
+  },
+  "postCreateCommand": "git config --global --add safe.directory /workspaces/* && ssh-add"
 }

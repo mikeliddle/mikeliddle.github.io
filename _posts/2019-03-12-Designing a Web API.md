@@ -3,6 +3,8 @@ layout:            post
 title:             "Designing a Web API"
 menutitle:         "Designing a Web API - TrashTalk"
 category:          Technology
+description:       "A look at the design of the Web API for TrashTalk, a trash can monitoring system."
+image:            assets/img/webapi.jpg
 author:            mike
 tags:              WebAPIs
 ---
@@ -84,7 +86,3 @@ company information, and an ordered collection of containers. Since order
 is significant, we want to have an easy way of enforcing that, which could
 be acheived in a NOSQL database. This has been done in SQL databases
 before, and works there, but we could simplify this with a NOSQL database.
-
-## Resources
-
-This will be covered in my next article.
