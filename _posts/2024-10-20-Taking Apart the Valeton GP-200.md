@@ -5,6 +5,7 @@ menutitle:         "Valeton GP-200 Teardown"
 category:          Technology
 author:            mike
 image:             assets/img/GP200/GP200Back.jpg
+thumb:             assets/img/GP200/GP200Back.jpg
 tags:              Music, Technology
 ---
 

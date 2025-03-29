@@ -2,7 +2,8 @@
 layout:            post
 title:             "The Trashcan Problem"
 menutitle:         "The Trashcan Problem - Finding an Algorithm"
-image:            assets/img/trashcan.jpg
+image:             assets/img/trashcan.jpg
+thumb:             assets/img/trashcan.jpg
 description:      "Finding the best location for trashcans using clustering algorithms"
 math:              true
 category:          Technology

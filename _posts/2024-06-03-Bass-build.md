@@ -5,6 +5,7 @@ author: mike
 categories: [ Music, project ]
 tags: [music, bass, project]
 image: assets/img/bass/BassWithPickguard.jpg
+thumb: assets/img/bass/BassWithPickguard.jpg
 description: "Part 1 of my Bass Build"
 ---
 

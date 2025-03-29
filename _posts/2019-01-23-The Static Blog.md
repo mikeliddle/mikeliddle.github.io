@@ -3,6 +3,7 @@ layout:            post
 title:             "The Static Blog"
 menutitle:         "The Static Blog"
 category:          Technology
+thumb:             assets/img/blog-thumbnail-346.jpg
 author:            mike
 tags:              Blogging
 ---

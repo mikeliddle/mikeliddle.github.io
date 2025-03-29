@@ -4,7 +4,8 @@ title:             "Designing a Web API"
 menutitle:         "Designing a Web API - TrashTalk"
 category:          Technology
 description:       "A look at the design of the Web API for TrashTalk, a trash can monitoring system."
-image:            assets/img/webapi.jpg
+image:             assets/img/webapi.jpg
+thumb:             assets/img/webapi.jpg
 author:            mike
 tags:              WebAPIs
 ---

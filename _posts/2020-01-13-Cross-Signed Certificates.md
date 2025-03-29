@@ -4,7 +4,8 @@ title:             "Cross-Signed Certificates"
 menutitle:         "Cross-Signed Certificates and Distributed Trust"
 category:          Technology
 description:      "Cross-signed certificates allow for distributed trust in a system. This is important for redundancy and security."
-image:            assets/img/certificates-350.jpg
+image:             assets/img/certificates.jpg
+thumb:             assets/img/certificates-350.jpg
 author:            mike
 tags:              X509 X.509 Cryptography Trust DistributedSystems
 ---
