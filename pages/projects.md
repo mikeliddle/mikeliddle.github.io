@@ -30,6 +30,17 @@ permalink: /Projects
     </div>
 </div>
 
+<br />
+
+<div class="card bg-dark">
+    <div class="card-header">
+        <h2>LiddleLab VS Code theme</h2>
+    </div>
+    <div class="card-body">
+        <p>For a while I really liked having a simple theme and configuration for my editor. Recently, while working on automating machine setup, I decided to create a theme to customize the look of my editor and publish it as a verified extension so that I could easily pull it in with my configuration scripts. It's a dark theme with similar colors to the theme of this website.</p>
+    </div>
+</div>
+
 <br/>
 
 <div class="card bg-dark">
