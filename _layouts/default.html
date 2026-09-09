@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="icon" href="/assets/img/logo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7z27NXFoaoApmYm81iuXoPkFOo7ShAUrKWJ0C0wGmT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+
+    <title>{{ page.title }} | {{ site.name }}</title>
+
+    {% if jekyll.environment == 'production' %}
+    <!-- change your GA id in _config.yml -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{site.google_analytics}}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    {% endif %}
+</head>
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
+<body class="{{layout}}">
+    {% include navbar.html %}
+    <div class="site-content">
+
+        <div class="container">
+
+            <!-- Content
+        ================================================== -->
+            <div class="main-content">
+                {{ content }}
+            </div>
+            <!-- Begin Footer
+        ================================================== -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                            Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
+                        </div>
+                        <div class="col-md-6 col-sm-6 text-center text-lg-right">
+                            <a href="{{ site.baseurl }}/privacy">Privacy Policy</a> ·
+                            <a href="{{ site.baseurl }}/tos">Terms of Service</a><br />
+                            <a target="_blank" rel="noopener" href="https://github.com/mikeliddle/LiddleLabTheme/">LiddleLab Jekyll
+                                Theme</a> by <a target="_blank" rel="noopener" href="https://github.com/mikeliddle">mikeliddle</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer
+        ================================================== -->
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
