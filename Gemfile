@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
 gem 'jekyll'
-gem 'liddlelab-theme', '~> 0.0.10'
+gem 'liddlelab-theme', '~> 0.0.11'
