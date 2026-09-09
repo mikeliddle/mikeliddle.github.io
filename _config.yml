@@ -13,6 +13,12 @@ repo_id: "MDEwOlJlcG9zaXRvcnkxMjg4NDUyODA="
 category: "General"
 category_id: "DIC_kwDOB64F4M4Cobms"
 
+footer_links:
+  - title: Privacy Policy
+    url: /privacy
+  - title: Terms of Service
+    url: /tos
+
 # Authors
 authors:
   mike:

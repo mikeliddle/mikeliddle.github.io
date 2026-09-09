@@ -34,6 +34,7 @@
             {% for pagelink in site.pages %}
                 {% if pagelink.url == "/" %}
                 {% elsif pagelink.url == "/404.html" %}
+                {% elsif pagelink.nav_exclude %}
                 {% elsif pagelink.title == nil or pagelink.title == "" %}
                 {% elsif pagelink.title == "Categories" %}
                 {% elsif pagelink.title == "Tags" %}
