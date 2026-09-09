@@ -8,7 +8,7 @@ description:      "Finding the best location for trashcans using clustering algo
 math:              true
 category:          Technology
 author:            mike
-tags:              Algorithms
+tags:              [Algorithms]
 ---
 
 ## The Problem
@@ -40,7 +40,9 @@ can avoid a complicated algorithm, its best to do that.
 {% raw %}
 <aside>
    <figure class="right">
-      <img src="/assets/img/SetCover.png#right" />
+      <img src="/assets/img/SetCover.png#right"
+           alt="Venn diagram illustrating sets S1 through S4 covering elements 1 through 5"
+           width="396" height="262" loading="lazy" decoding="async" />
       <figcaption>Set Cover</figcaption>
    </figure>
 </aside>
@@ -86,7 +88,9 @@ clusters should divide, right? We will revisit clustering.
 {% raw %}
 <aside>
    <figure class="left">
-      <img src="/assets/img/BubblePlot.png#left" />
+      <img src="/assets/img/BubblePlot.png#left"
+           alt="Bubble plot mapping trash volume at geographic coordinates across city locations"
+           width="226" height="180" loading="lazy" decoding="async" />
       <figcaption>Bubble Chart</figcaption>
    </figure>
 </aside>
@@ -110,7 +114,9 @@ algorithm.
 {% raw %}
 <aside>
    <figure class="right">
-      <img src="/assets/img/Gaussian.png#right" />
+      <img src="/assets/img/Gaussian.png#right"
+           alt="Scatter plot demonstrating DBSCAN clustering on Gaussian-distributed data points"
+           width="939" height="830" loading="lazy" decoding="async" />
       <figcaption>DBSCAN on a Gaussian Distribution</figcaption>
    </figure>
 </aside>

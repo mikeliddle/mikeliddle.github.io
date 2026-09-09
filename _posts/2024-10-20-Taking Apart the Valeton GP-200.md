@@ -6,7 +6,7 @@ category:          Technology
 author:            mike
 image:             assets/img/GP200/GP200Back.jpg
 thumb:             assets/img/GP200/GP200Back.jpg
-tags:              Music, Technology
+tags:              [Music, Technology]
 ---
 
 Recently while working on my midi bass project, I thought, "hey, I have a
@@ -68,29 +68,29 @@ As an example, there were several ICs around the board with the marking "SGM
 
 https://www.nxp.com/part/MIMXRT106FDVL6B#/
 
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162721.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162802.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162806.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162829.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162834.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_162844.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163118.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163123.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163137.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163156.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163202.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163206.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163216.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163222.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163225.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163229.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163233.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163236.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163300.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163319.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163324.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163332.jpg)
-![GP200 1]({{ site.baseurl }}/assets/img/GP200/20240613_163339.jpg)
+{% include responsive-image.html src="/assets/img/GP200/20240613_162721.jpg" alt="Opened Valeton GP-200 chassis showing the main circuit board, footswitch daughterboard, and ribbon cables" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_162802.jpg" alt="Angled view of the balanced XLR output board and its chassis grounding clips" width="1800" height="1014" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_162806.jpg" alt="Top-down view of the XLR output daughterboard with its ribbon connector and chassis lugs" width="1800" height="1014" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_162829.jpg" alt="Audio input and output section with quarter-inch jacks and capacitors secured by white adhesive" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_162834.jpg" alt="Top view of the quarter-inch audio jack solder joints and nearby analog input circuitry" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_162844.jpg" alt="Digital processing section of the GP-200 mainboard with an RF shield and USB-C port" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163118.jpg" alt="Upper footswitch circuit board with tactile switches and LED indicators" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163123.jpg" alt="Rear solder side of the footswitch circuit board mounted inside the upper chassis" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163137.jpg" alt="Chassis cavity showing the expression pedal pivot assembly and optical sensor bracket" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163156.jpg" alt="Close-up of the expression pedal axle, spring-loaded tensioner, and chassis pivot mount" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163202.jpg" alt="Mainboard section with front-panel rotary encoder terminals and logic shift registers" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163206.jpg" alt="Close-up of parallel-input and serial-output shift register chips on the mainboard" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163216.jpg" alt="Analog audio signal path with SGM8270 dual operational amplifiers and passive components" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163222.jpg" alt="Close-up of NE5532 low-noise operational amplifiers on the main audio board" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163225.jpg" alt="NE5532 operational amplifiers surrounded by surface-mount resistors and capacitors" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163229.jpg" alt="Audio converter section with a Cirrus Logic CS4272 stereo codec and support circuitry" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163233.jpg" alt="Close-up of the Cirrus Logic CS4272 audio codec integrated circuit" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163236.jpg" alt="Mainboard cutouts and ground-plane traces around the rear audio jack sockets" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163300.jpg" alt="Front-panel display connector and ribbon cable header on the main circuit board" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163319.jpg" alt="Expression pedal optical sensor module circuit board removed from the chassis" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163324.jpg" alt="Reverse side of the optical sensor board with its emitter, detector, and ribbon connector" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163332.jpg" alt="Underside of the removed expression pedal treadle with its optical interrupter vane" width="1800" height="3198" %}
+{% include responsive-image.html src="/assets/img/GP200/20240613_163339.jpg" alt="Fully disassembled Valeton GP-200 with chassis parts, circuit boards, and hardware laid out" width="1800" height="3198" %}
 
 ## Future Steps
 

@@ -2,8 +2,8 @@
 layout: post
 title:  "The Creamsicle Bass"
 author: mike
-categories: [ Music, project ]
-tags: [music, bass, project]
+categories: [Music, Project]
+tags: [Music, Bass, Project]
 image: assets/img/bass/BassWithPickguard.jpg
 thumb: assets/img/bass/BassWithPickguard.jpg
 description: "Part 1 of my Bass Build"
@@ -43,7 +43,7 @@ blade before cutting it. The blade was dull and it caused a lot of shaking
 during the cuts, which put some dents in the neck. They aren't noticeable in
 playing, but they are there.
 
-![Bass Neck]({{ site.baseurl }}/assets/img/bass/BassNeck.jpg)
+{% include responsive-image.html src="/assets/img/bass/BassNeck.jpg" alt="Bass guitar headstock fitted with open-gear tuning machines" width="1800" height="1014" %}
 
 ## Sanding Purgatory
 
@@ -73,7 +73,7 @@ the paint to adhere to and level out on. The second reason was if I decided to
 make the bass look road-worn, I could have white underneath, emphasizing the
 creamsicle theme.
 
-![Bass With Primer]({{ site.baseurl }}/assets/img/bass/BassPrimer.jpg)
+{% include responsive-image.html src="/assets/img/bass/BassPrimer.jpg" alt="Bass body prepared with grey primer" width="1800" height="1014" %}
 
 While priming the body, I learned an important lesson about painting without
 hanging. I was putting the body in a diaper box, and painting it in there, and
@@ -84,7 +84,7 @@ and hung it from my garage door track while painting. This worked out much
 better, and let me do a full coat over the whole body at once instead of needing
 to wait a day or so for things to dry.
 
-![Bass Body Painted Orange]({{ site.baseurl }}/assets/img/bass/BassOrangeBody.jpg)
+{% include responsive-image.html src="/assets/img/bass/BassOrangeBody.jpg" alt="Bass body after painting it bright orange" width="1800" height="3198" %}
 
 After getting several coats of color on the bass, I leveled out the paint with
 some 800 grit sand paper. Since this was my first time, I sanded too much in
@@ -114,7 +114,7 @@ the tape from the frets, cleaned them up with some fine steel wool, and wiped
 everything down and polished it one last time. Finally I bolted the neck on,
 started attaching hardware and got it put together.
 
-![Bass Assembled]({{ site.baseurl }}/assets/img/bass/BassFull.jpg)
+{% include responsive-image.html src="/assets/img/bass/BassFull.jpg" alt="Completed orange electric bass guitar standing on a wooden floor" width="1800" height="3198" %}
 
 ## QA Issues
 

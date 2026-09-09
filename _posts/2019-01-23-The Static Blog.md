@@ -5,10 +5,8 @@ menutitle:         "The Static Blog"
 category:          Technology
 thumb:             assets/img/blog-thumbnail-346.jpg
 author:            mike
-tags:              Blogging
+tags:              [Blogging]
 ---
-
-# The Static Blog
 
 This is my first attempt at making a static blog. I recently realized that I would
 have to switch my hosting providers and wanted to find a free way to host a blog
