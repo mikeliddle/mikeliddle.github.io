@@ -5,6 +5,8 @@ permalink: /tos
 nav_exclude: true
 ---
 
+# Terms of Service
+
 **Effective date:** September 8, 2026
 
 These Terms of Service ("Terms") govern your access to and use of the Liddle Laboratory website and related applications or services (collectively, the "Services"). By using the Services, you agree to these Terms. If you do not agree, do not use the Services.

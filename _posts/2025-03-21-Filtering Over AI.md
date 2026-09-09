@@ -2,15 +2,15 @@
 layout: post
 title: "Filtering Over AI"
 author: mike
-categories: ["AI", "project", "technology"]
-tags: ["AI", "project", "technology"]
+categories: [AI, Project, Technology]
+tags: [AI, Project, Technology]
 image: assets/img/drain.jpg
 thumb: assets/img/drain-346.jpg
 description: "To reduce the cost of AI, we need to filter requests before they hit the generative AI."
 featured: true
 ---
 
-# AI: The Cost
+## AI: The Cost
 
 Anyone familiar with generative AI knows that it is expensive. Companies are investing in creating their own chips to avoid paying exorbitant amounts to nvidia and other third parties for GPUs. Then you have the energy efficiency. Microsoft, Google, and others have started looking to nuclear energy to power their data centers to subsidize the investments they are making to their AI platforms.
 
@@ -20,7 +20,7 @@ While generative AI has generated a lot of hype lately, and significant investme
 
 This randomness requires extensive data sets to coalesce into a useful output. And since we've had such incredible growth in computing power (via GPUs, Networking improvements, and NVMe storage), we have access to these large data sets and a way to put them to use. But why on earth would I try to get an image generator to answer a math question? Sure it could probably do it, but why?
 
-# Filtering
+## Filtering
 
 This is why the industry needs to adopt more request filtering. Classifiers have been around for a lot longer than generative AI, and do a great job of taking even natural language and classifying it into a set of categories. This is a much simpler problem than generative AI, and can be done much faster. Why don't we fix generative AI by filtering out some requests and evaluating them based on a classification. Classification can be done cheaply, and efficiently, and many times, a generative AI is unnecessary to answer.
 
@@ -28,7 +28,7 @@ This is why the industry needs to adopt more request filtering. Classifiers have
 
 Similarly with search, some people access sites by going to google and typing, "gmail." Then clicking the first link. Why do you need to submit that prompt to an expensive AI, which will cost significant amounts of money to process when you could just link me to the site that is an exact match for my text query? Sure, give me a copilot button if I do want to interact with the AI and get the longer question, but why are you spending so much money on features that users actively dislike, or ignore?
 
-# Architecture
+## Architecture
 
 How would we structure this? Let's imagine ourselves an API that looks like this (ignoring pagination to keep this simple):
 
@@ -72,7 +72,7 @@ Authorization: Bearer <token>
 
 When you hit this endpoint, the service knows where you're coming from (IP), who you are (token), and what you're asking for (query). When you submit a query, your request is first authenticated. Then, you'll be passed on to the authenticated cache layer. If you've asked the question before (within a cache lifetime), let's make this deterministic and give you the same result unless you specifically ask for a new one. Cache lookups are fast, easy, and cheap. The next layer you'd move onto is the classifier. This takes a bit more time than a cache hit, but if you're question is a math question, forward the request to our math service. If we can determine its a website you're looking for, let's do a simple web search based on your location and who you are, just like google used to do. Let's say you have a question though. That would then be fed into the generative AI as a last resort, to try to answer your question. It still is useful to do the web search along with that, since generative AI lacks a lot of intelligence. But we can apply that filtering again now that we understand it better.
 
-# Stepping Forward
+## Stepping Forward
 
 I mentioned taking the filtering further. There's this concept called "Vibe Coding" where the thesis is you feed the AI prompts and you embrace what it gives you. Don't like what you get back, or it doesn't work? Re-roll. What a way to spend a million dollars. Why should I ever have to re-roll? With programming, where you have programs built to tell you if something will run and if not, why, why are we getting bad answers? Why can't we include a filter as part of our generative AI to weed out bad results before they happen? Why aren't we adding a filter layer during the token generation that is able to identify interpreter/compiler errors and correct them without a user needing to engage again, and likely again. This back and forth gets very expensive, and needlessly so. If you find a compilation error, its often a one-line error. Even re-rolling a single line with extra input, is much cheaper than re-rolling an entire prompt.
 
@@ -80,6 +80,6 @@ We can use this classifier layered with AI to give the user better results every
 
 That healthy abstraction should be considered the minimum bar for generative AI. End-users are nutoriously stubborn and excellent at breaking expectations. We shouldn't try to have them get good, instead the AI should get good and understand what someone wants better. If you want ubiquity from an AI, it should make things easier coming from where you are, you shouldn't have to learn new skills in order to get the output you expect or want.
 
-# Conclusion
+## Conclusion
 
 All of this is not to take away from the advantage that is non-deterministic entropy in AI. The thing that makes generative AI so expensive is what makes it so versatile, useful, and powerful. The issue is, most of our problems don't need that power. We don't need to smash a fly with a bulldozer. We don't need to use a generative AI to do simple calculations, or direct us to what should be a bookmarked site. We don't need to re-solve solved problems. We should consider filtering requests to make our AI more intelligent and less expensive.

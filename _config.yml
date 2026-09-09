@@ -7,7 +7,8 @@ logo: 'assets/img/logo.png'
 favicon: 'assets/img/logo.png'
 include: ["_pages"]
 permalink: /:title/
-baseurl: "https://liddlelaboratory.com"
+url: "https://liddlelaboratory.com"
+baseurl: ""
 repo: "mikeliddle/mikeliddle.github.io"
 repo_id: "MDEwOlJlcG9zaXRvcnkxMjg4NDUyODA="
 category: "General"
@@ -24,7 +25,7 @@ authors:
   mike:
     name: Mike
     display_name: Mike
-    gravatar: 537fee6088011d6068b011a99170f4f5d9491f2dd52b15daf630d37b78fa5d65?s=256
+    gravatar: 537fee6088011d6068b011a99170f4f5d9491f2dd52b15daf630d37b78fa5d65
     email:
     web: https://liddlelaboratory.com/blog
     description: "Software Engineer, author of this Blog"
@@ -65,6 +66,6 @@ adsense-data-ad-client: ""
 adsense-data-ad-slot: ""
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+lazyimages: "enabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, scripts]

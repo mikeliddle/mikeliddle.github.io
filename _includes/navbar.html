@@ -1,11 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="border-bottom: 3px solid black;">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="border-bottom: 3px solid black;"
+    aria-label="Primary navigation">
 
-    <a class="navbar-brand" href="https://liddlelaboratory.com/">
-        <h1 class="sitetitle">{{ site.name }} >_</h1>
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <span class="sitetitle">{{ site.name }} &gt;_</span>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#liddlenavbar"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="liddlenavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -20,7 +21,7 @@
             <li class="nav-item">
                 {% endif %}
 
-                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+                <a class="nav-link" href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
             </li>
 
             {% if page.url == "/blog/" %}
@@ -28,7 +29,7 @@
                 {% else %}
             <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
+                <a class="nav-link" href="{{ site.baseurl }}/blog"{% if page.url == "/blog/" %} aria-current="page"{% endif %}>Blog</a>
             </li>
 
             {% for pagelink in site.pages %}
@@ -46,7 +47,7 @@
                     {% else %}
                     <li class="nav-item">
                     {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}{{ pagelink.url }}">{{ pagelink.title }}</a>
+                        <a class="nav-link" href="{{ site.baseurl }}{{ pagelink.url }}"{% if page.url == pagelink.url %} aria-current="page"{% endif %}>{{ pagelink.title }}</a>
                     </li>
                 {% endif %}
             {% endfor %}

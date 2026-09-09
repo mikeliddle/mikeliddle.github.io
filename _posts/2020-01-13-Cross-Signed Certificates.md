@@ -7,10 +7,10 @@ description:      "Cross-signed certificates allow for distributed trust in a sy
 image:             assets/img/certificates.jpg
 thumb:             assets/img/certificates-350.jpg
 author:            mike
-tags:              X509 X.509 Cryptography Trust DistributedSystems
+tags:              [X509, X.509, Cryptography, Trust, DistributedSystems]
 ---
 
-# Who do you trust?
+## Who do you trust?
 
 One of the earliest internet protocols was http. Very quickly, engineers
 discovered a need to secure content that they sent/received. This lead to
@@ -36,7 +36,7 @@ however, eliminated trust for all sites who could be trusted, but had certificat
 issued by Comodo's reseller or DigiNotar. So those sites were effectively offline
 until their certificates were re-issued (which is not a definite time frame).
 
-# Cross-Signing
+## Cross-Signing
 
 Cross-signing a certificate allows for a private/public key pair to be signed
 by multiple CA's. By getting a cross-signed certificate, you effectively have

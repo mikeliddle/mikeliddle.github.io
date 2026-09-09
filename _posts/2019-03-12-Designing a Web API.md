@@ -7,10 +7,10 @@ description:       "A look at the design of the Web API for TrashTalk, a trash c
 image:             assets/img/webapi.jpg
 thumb:             assets/img/webapi.jpg
 author:            mike
-tags:              WebAPIs
+tags:              [WebAPIs]
 ---
 
-# Where to start
+## Where to start
 
 In designing the Web API for TrashTalk, there are many thing I would do
 different. With that disclaimer, the approach I took was making the best

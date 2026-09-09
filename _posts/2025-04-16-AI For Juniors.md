@@ -10,7 +10,7 @@ tags: [AI, Technology]
 description: "AI can be a huge detriment to junior engineers onboarding to projects and learning valuable skills. Here is what to look out for, and how to leverage it to your benefit."
 ---
 
-# AI Investments
+## AI Investments
 
 At my work, there's been a lot of pressure to learn to use AI in our job. I was told that our company has invested so heavily in AI, that if some of the bets don't pay off, there would be widespread layoffs at our company. Since we are a tech company building out AI products, this isn't surprising. The issue that comes with this encouragement is that unlike most products we've shipped, AI sounds like a big unknown. We are encouraged to "Learn how to apply AI to our products", "Learn how to leverage AI to be more productive", but not told "Here's how AI will help you be more productive."
 

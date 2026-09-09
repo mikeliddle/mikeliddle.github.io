@@ -5,6 +5,8 @@ permalink: /privacy
 nav_exclude: true
 ---
 
+# Privacy Policy
+
 **Effective date:** September 8, 2026
 
 Liddle Laboratory respects your privacy. This policy explains what information we collect when you use this website and related applications or services (collectively, the "Services"), why we collect it, and how it is handled.
