@@ -3,8 +3,8 @@ name: "Liddle Laboratory"
 title: "Liddle Laboratory"
 theme: "liddlelab-theme"
 description: "My Project Blog"
-logo: 'assets/img/logo.png'
-favicon: 'assets/img/logo.png'
+logo: "assets/img/logo.png"
+favicon: "assets/img/logo.png"
 include: ["_pages"]
 permalink: /:title/
 url: "https://liddlelaboratory.com"
@@ -28,7 +28,7 @@ authors:
     gravatar: 537fee6088011d6068b011a99170f4f5d9491f2dd52b15daf630d37b78fa5d65
     email:
     web: https://liddlelaboratory.com/blog
-    description: "Software Engineer, author of this Blog"
+    description: "Senior Software Engineer, author of this Blog"
 
 # Plugins
 plugins:
@@ -44,7 +44,7 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
+    category: "/category/:name/"
 
 # Pagination
 paginate: 6
