@@ -9,7 +9,7 @@ tags: [Technology, Homelab, DNS]
 description: "There's a joke in the IT industry that whenever you have networking issues, it's DNS. Here we explore why DNS is often the culprit as we try to build better resilient systems."
 ---
 
-<small>Header photo: ["Server Rack with Spaghetti-Like Mass of Network Cables"](https://commons.wikimedia.org/wiki/File:Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg) by Kim Scarborough, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Cropped and resized from the original.</small>
+_Header photo: ["Server Rack with Spaghetti-Like Mass of Network Cables"](https://commons.wikimedia.org/wiki/File:Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg) by Kim Scarborough, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Resized from the original._
 
 ## Background
 
