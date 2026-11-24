@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "fyi.mllab.puzzle",
+      "sha256_cert_fingerprints": [
+        "5F:55:86:F9:86:43:47:81:43:93:FD:FA:2C:C5:F9:4A:B9:25:4C:44:A6:17:42:AB:10:5C:29:76:00:56:F2:E6"
+      ]
+    }
+  }
+]

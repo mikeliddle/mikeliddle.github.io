@@ -1,0 +1,58 @@
+---
+permalink: /liddle-puzzles/share/
+nav_exclude: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Shared Puzzle | Liddle Puzzles</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <style>
+    main { max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; }
+    main a { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Play a shared puzzle</h1>
+    <p>Open the puzzle in Liddle Puzzles for Android. The puzzle isn't playable in your browser.</p>
+    <p id="share-action" hidden><a id="open-puzzle">Open in Liddle Puzzles</a></p>
+    <p id="share-error" role="status" hidden>This puzzle link is incomplete or unsupported. Ask the sender to share it again.</p>
+
+    <h2>If the puzzle doesn't open</h2>
+    <ul>
+      <li><a href="https://github.com/mikeliddle/LiddlePuzzles/releases/latest">Get or update Liddle Puzzles for Android</a>, then try the original link again.</li>
+      <li>In an app version that supports HTTPS puzzle links, copy the full link and paste it into <strong>Shared puzzles</strong> on Home.</li>
+      <li>On older versions, try <strong>Open in Liddle Puzzles</strong> above. If it doesn't open and your browser offers to copy that link's address, paste that address into <strong>Shared puzzles</strong> instead.</li>
+    </ul>
+    <p><a href="{{ '/liddle-puzzles/privacy' | relative_url }}">Liddle Puzzles privacy policy</a></p>
+  </main>
+  <script>
+    const action = document.getElementById('share-action');
+    const open = document.getElementById('open-puzzle');
+    const error = document.getElementById('share-error');
+    const format = /^#((?:sudoku|daily-word|takuzu|nonogram|futoshiki|numberlink|slitherlink)\/v1\/[A-Za-z0-9_-]+)(?![\s\S])/;
+
+    function updatePuzzleLink() {
+      const fragment = window.location.hash;
+      // The app caps the full internal link (including its scheme) at 512 characters.
+      const match = fragment.length - 1 + 'liddlepuzzles-local://'.length <= 512
+        ? format.exec(fragment)
+        : null;
+      if (match) {
+        open.href = 'liddlepuzzles://' + match[1];
+      } else {
+        open.removeAttribute('href');
+      }
+      action.hidden = !match;
+      error.hidden = !fragment || Boolean(match);
+    }
+
+    updatePuzzleLink();
+    window.addEventListener('hashchange', updatePuzzleLink);
+  </script>
+</body>
+</html>

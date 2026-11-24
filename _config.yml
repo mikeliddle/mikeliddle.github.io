@@ -5,7 +5,7 @@ theme: "liddlelab-theme"
 description: "My Project Blog"
 logo: "assets/img/logo.png"
 favicon: "assets/img/logo.png"
-include: ["_pages"]
+include: ["_pages", ".well-known"]
 permalink: /:title/
 url: "https://liddlelaboratory.com"
 baseurl: ""
