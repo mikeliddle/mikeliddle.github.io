@@ -23,7 +23,7 @@ Saves and settings stay on your device across restarts and compatible updates. T
 
 ## Sharing a puzzle
 
-When you choose to share a puzzle, Liddle Puzzles passes a link containing only the puzzle's starting definition to the Android Sharesheet. It does not include your moves, notes, answers, history, or solve time. The app you choose to send the link handles it under its own privacy policy. The recipient's progress stays on their device.
+When you choose Share, Liddle Puzzles passes a link containing only the puzzle's starting definition to the Android Sharesheet. In app versions that support timed sharing, if you solved the puzzle and the app recorded a solve time, the outgoing message also shows that time as text outside the link. Neither the link nor the message includes your moves, notes, answers, or move history. The messaging app you choose handles the message under its own privacy policy. The recipient's progress stays on their device.
 
 ## Website and downloads
 
